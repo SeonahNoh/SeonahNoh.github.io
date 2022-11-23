@@ -30,5 +30,5 @@ https://SeonahNoh.github.io
 ##### [벚꽃이미지](https://file.mk.co.kr/meet/yonhap/2022/04/06/image_readtop_2022_308235_0_093211.jpg)
 
 ##### 깃에 올려 삽입하기
-![벚꽃이미지](https://file.mk.co.kr/meet/yonhap/2022/04/06/image_readtop_2022_308235_0_093211.jpg)
+![벚꽃이미지](https://t1.daumcdn.net/cfile/tistory/99856E485AC472330E)
 ![winter](./images/winter_img.png)
