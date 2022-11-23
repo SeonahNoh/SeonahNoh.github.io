@@ -30,4 +30,4 @@ https://SeonahNoh.github.io
 ##### [벚꽃이미지](https://file.mk.co.kr/meet/yonhap/2022/04/06/image_readtop_2022_308235_0_093211.jpg)
 
 ##### 깃에 올려 삽입하기
-![벚꽃이미지](./img/cherry_blossoms.jpg)
+[벚꽃이미지](./img/cherry_blossoms.jpg)
