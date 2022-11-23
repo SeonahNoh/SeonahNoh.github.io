@@ -25,6 +25,6 @@ https://SeonahNoh.github.io
 
 [N서울타워](https://SeonahNoh.github.io, 개별)
 
-#### https://SeonahNoh.github.io/images/main
+#### https://SeonahNoh.github.io/images/winter_img.png
 
 ##### [벚꽃이미지](https://file.mk.co.kr/meet/yonhap/2022/04/06/image_readtop_2022_308235_0_093211.jpg)
