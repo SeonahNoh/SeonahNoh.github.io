@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타태그 설정 시작 -->
+    <meta name="title" property="og:title" content="BlueSquare">
+    <meta name="images" property="og:image" content="./img/meta_img.png">
+    <meta name="description" property="og:description" content="풍성한 즐거움을 제공하는 복합문화공간, 블루스퀘어">
+    <meta name="type" property="og:type" content="article">
+    <!-- 메타태그 설정 끝 -->
+    <!-- favicon 설정 시작 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon 설정 끝 -->
+    <link rel="stylesheet" href="./css/join.css" type="text/css">
+    <title>BLUE SQUARE</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/02fac5dfa7.js" crossorigin="anonymous"></script>
+    <script src="./js/join.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
+</head> 
+<body>
+    <div class="wrapper">
+        <div class="go-home"><a href="../index.html">홈으로</a></div>
+        <div class="container">
+            <div class="pos-wrap">
+                <div class="join-wrap">
+                    <h1>JOIN</h1>
+                    <form action="#" id="join-frm" name="frm">
+                        <div class="id-box">
+                            <label for="user-id">아이디(이메일)<span>*</span></label>
+                            <input type="email" placeholder="name@example.com" name="user-id" id="user-id" autocomplete="off" required>
+                            <span class="user-id-valid"></span>
+                        </div>
+                        <div class="pw-box">
+                            <label for="user-pw">비밀번호<span>*</span></label>
+                            <div>
+                                <input type="password" placeholder="영문, 숫자, 특수문자 조합 8자리 이상" id="user-pw" name="user-pw" minlength="8" required>
+                                <i class="fa fa-eye-slash fa-lg" id="pw-eye"></i>
+                            </div>
+                            <span class="user-pw-valid"></span>
+                        </div>
+                        <div class="pw-box-check">
+                            <label for="user-pw-check">비밀번호 확인<span>*</span></label>
+                            <div>
+                                <input type="password" placeholder="영문, 숫자, 특수문자 조합 8자리 이상" id="user-pw-check" name="user-pw-check" minlength="8" required>
+                                <i class="fa fa-eye-slash fa-lg" id="pw-re-eye"></i>
+                            </div>
+                            <span class="user-pw-check-valid"></span>
+                        </div>
+                        <div class="phone-box">
+                            <label for="user-phone">휴대전화<span>*</span></label>
+                            <input type="text" placeholder="예)01012345678" id="user-phone" name="user-phone" maxlength="11" autocomplete="off" required>
+                            <span class="user-phone-valid"></span>
+                        </div>
+                        <div class="address-box">
+                            <label for="user-address">주소</label>
+                            <input type="text" readonly id="address-content">
+                            <input type="button" value="주소 검색" id="user-address" name="user-address"> 
+                        </div>
+                        <div class="gender-box">
+                            <label>성별</label>
+                            <div class="radio-box">
+                                <input type="radio" name="user-gender" id="woman" value="woman"> <label for="woman">여성</label>
+                                <input type="radio" name="user-gender" id="man" value="man"> <label for="man">남성</label>
+                                <input type="radio" name="user-gender" id="no-check" value="no-check" checked> <label for="no-check">선택안함</label>
+                            </div>
+                        </div>
+                        <div class="birth-box">
+                            <label for="user-birth">생년월일</label>
+                            <input type="text" placeholder="예)20010415" id="user-birth" name="user-birth" minlength="8" maxlength="8" autocomplete="off"> 
+                        </div>
+
+                        <button value="submit" id="join-btn">JOIN</button>
+
+                        <div class="join-agree">
+                            <div class="line"></div>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <input type="checkbox" name="allAgree" id="allAgree" onclick="allcheck()"><label for="allAgree">전체동의</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox" name="agree1" id="agree1"><label for="agree1">사이트이용약관(필수)</label>
+                                    </div>
+                                    <a href="#">약관보기<i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox" name="agree2" id="agree2"><label for="agree2">개인정보처리방침(필수)</label>
+                                    </div>
+                                    <a href="#">약관보기<i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="checkbox" name="agree3" id="agree3"><label for="agree3">마케팅수신동의(선택)</label>
+                                    </div>
+                                    <a href="#">약관보기<i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div> <!-- join-agree -->
+                    </form>
+                </div> <!-- join-wrap -->
+            </div> <!-- pos-wrap -->
+        </div> <!-- container -->
+    </div> <!-- wrapper -->
+</body>
+</html>

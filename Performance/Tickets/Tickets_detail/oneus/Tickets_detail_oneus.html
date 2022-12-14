@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타태그 설정 시작 -->
+    <meta name="title" property="og:title" content="BlueSquare">
+    <meta name="images" property="og:image" content="./img/meta_img.png">
+    <meta name="description" property="og:description" content="풍성한 즐거움을 제공하는 복합문화공간, 블루스퀘어">
+    <meta name="type" property="og:type" content="article">
+    <!-- 메타태그 설정 끝 -->
+    <!-- favicon 설정 시작 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon 설정 끝 -->
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/Tickets_detail.js"></script>
+    <title>BLUE SQUARE</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-menu-box">
+                <div class="container">
+                    <div class="flex-box">
+                        <div class="header-logo">
+                            <a href="../../../../index.html" class="mobile-only"><img src="./img/logo_only.png" alt="logo"></a>
+                            <a href="../../../../index.html" class="large-only hover-change"><img src="./img/logo_black.png" alt="logo"></a>
+                        </div>
+    
+                        <nav class="main-menu">
+                            <ul class="gnb">
+                                <li>
+                                    <a href="../../../../About/Overview/overview.html">블루스퀘어</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../About/Overview/overview.html">기관소개</a></li>
+                                        <li><a href="../../../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Performance/Tickets/tickets.html">공연안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Performance/Tickets/tickets.html">공연예매</a></li>
+                                        <li><a href="../../../../Performance/All_Schedule/all_schedule.html">공연일정</a></li>
+                                        <li><a href="../../../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Venue/Venue_Guidance/shinhan.html">대관안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Venue/Venue_Guidance/shinhan.html">대관시설/대관료</a></li>
+                                        <li><a href="../../../../Venue/Application/application.html">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">이용안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">레스토랑&카페</a></li>
+                                        <li><a href="../../../../Visit/Culture_Space/culture_space.html">문화공간</a></li>
+                                        <li><a href="../../../../Visit/How_to_come/how_to_come.html">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Community/Notice/notice.html">고객센터</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Community/Notice/notice.html">공지사항</a></li>
+                                        <li><a href="../../../../Community/FAQ/FAQ.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul> <!-- gnb -->
+                        </nav> <!-- main-menu-->
+    
+                        <div class="right-menu">
+                            <ul>                                
+                                <li class="mobile-only left"><a href="../../../../Performance/Tickets/tickets.html"><img src="./img/ticket_black.png" alt="ticket"></a></li>
+                                <li class="mobile-only right"><a href="#"><img src="./img/menu_black.png" alt="menu"></a></li>
+                                <li class="large-only"><a href="../../../../Performance/Tickets/tickets.html">TICKET</a></li>
+                                <li class="large-only"><a href="../../../../login/login.html">LOG IN</a></li>
+                                <li class="large-only"><a href="../../../../join/join.html">JOIN</a></li>
+                            </ul>
+                        </div> <!-- right-menu -->
+                    </div> <!-- flex-box -->
+                </div> <!-- container -->
+            </div> <!-- logo-menu-box -->
+
+            <div class="mobile-only overlay">
+                <a href="#" class="close-btn">&times;</a>
+                <div class="overlay-menu">
+                    <ul>
+                        <li>
+                            <a href="#">블루스퀘어</a>
+                            <ul>
+                                <li><a href="../../../../About/Overview/overview.html">기관소개</a></li>
+                                <li><a href="../../../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">공연안내</a>
+                            <ul>
+                                <li><a href="../../../../Performance/Tickets/tickets.html">공연예매</a></li>
+                                <li><a href="../../../../Performance/All_Schedule/all_schedule.html">공연일정</a></li>
+                                <li><a href="../../../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">대관안내</a>
+                            <ul>
+                                <li><a href="../../../../Venue/Venue_Guidance/shinhan.html">대관시설/대관료</a></li>
+                                <li><a href="../../../../Venue/Application/application.html">대관신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul>
+                                <li><a href="../../../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">레스토랑&카페</a></li>
+                                <li><a href="../../../../Visit/Culture_Space/culture_space.html">문화공간</a></li>
+                                <li><a href="../../../../Visit/How_to_come/how_to_come.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul>
+                                <li><a href="../../../../Community/Notice/notice.html">공지사항</a></li>
+                                <li><a href="../../../../Community/FAQ/FAQ.html">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <li style="padding-top:30px;"><a href="../../../../login/login.html" style="font-size: 16px;">LOG IN</a></li>
+                        <li><a href="../../../../join/join.html" style="font-size: 16px;">JOIN</a></li>
+                    </ul> 
+                </div> <!-- overlay-menu -->
+            </div> <!-- overlay -->
+        </header> <!-- header -->
+
+        <main>
+            <div class="content-wrap">
+                <div class="detail-wrap">
+                    <div class="container">
+                        <h1 class="h1_line" data-aos="fade-right" data-aos-duration="800">상세보기</h1>
+                        <hr data-aos="fade-right" data-aos-duration="800">
+                    </div>
+                    
+                    <div class="detail-main">
+                        <div class="box">
+                            <div class="left-img">
+                                <div class="ticket-poster">
+                                    <div class="topWrap">
+                                        <div class="bg">
+                                            <img src="./img/oneus/poster.png" alt="poster">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main-poster">
+                                                <img src="./img/oneus/poster.png" alt="oneus" class="poster">
+                                            </div>
+                                        </div> <!-- content -->
+                                    </div> <!-- topWrap -->
+                                </div> <!-- ticket-poster -->
+                                <div class="sns">
+                                        <ul class="sns-box">
+                                            <li><a href="https://www.instagram.com/official_oneus/" target="_blank"><img src="./img/sns-instagram.png" alt="instagram"></a></li>
+                                            <li><a href="https://twitter.com/official_ONEUS" target="_blank"><img src="./img/sns-twitter_white.png" alt="twitter"></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UCWTYf4xModfNsyq2NUYjF5g"><img src="./img/sns-youtube_white.png" alt="youtube"></a></li>
+                                        </ul>
+                                    </div> <!-- sns -->
+                            </div> <!-- left-img -->
+                            <div class="right-text">
+                                <div class="container">
+                                    <div class="ticket-intro-text">
+                                        <div class="title-box">
+                                            <div class="show-info-ing">
+                                                <p>공연 예정</p>
+                                            </div> <!-- show-info-ing -->
+                                            <h2>원어스 콘서트</h2>
+                                            <p>2022 ONEUS 1ST WORLD TOUR ‘REACH FOR US’ - SEOUL</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>장르</p>
+                                                <p>콘서트</p>
+                                            </li>
+                                            <li>
+                                                <p>기간</p>
+                                                <p>2022.10.29 ~ 2022.10.30</p>
+                                            </li>
+                                            <li>
+                                                <p>장소</p>
+                                                <p>블루스퀘어 마스터카드홀</p>
+                                            </li>
+                                            <li>
+                                                <p>시간</p>
+                                                <p>
+                                                    10월 29일(토) 오후 7시<br>
+                                                    10월 30일(일) 오후 3시
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>관람등급</p>
+                                                <p>8세 이상 관람가</p>
+                                            </li>
+                                            <li> 
+                                                <p>관람시간</p>
+                                                <p>120분</p>
+                                            </li>
+                                            <li>
+                                                <p>사이트</p>
+                                                <p>
+                                                    <a href="http://www.rbbridge.com/?page_id=23497" class="link">www.rbbridge.com/?page_id=23497</a>
+                                                    <a href="http://www.rbbridge.com/?page_id=23497" target="_blank" class="link">사이트 바로가기 ▶</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>가격</p>
+                                                <div class="all-price">
+                                                    <p>
+                                                        지정석 &nbsp;<span>121,000원&nbsp;</span><br>
+                                                    </p>  
+                                                </div> <!-- all-price -->
+                                            </li>
+                                        </ul>  
+                                    </div> <!-- ticket-intro-text -->
+                                    <div class="info-booking-button">
+                                        <ul>
+                                            <li>
+                                                <a href="../../../Booking_Guide/booking_guide.html">예매안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">예매하기<img src="./img/ticket_white.png" alt="ticket_white" class="ticket"></a>
+                                            </li>
+                                        </ul>
+                                    </div> <!-- info-booking-button -->
+                                </div><!-- container -->
+                            </div> <!-- right-text -->
+                        </div> <!-- box -->
+                    </div> <!-- detail-main -->
+                    <div class="contents-list">
+                        <div class="container">
+                            <div class="casting">
+                                <h3>출연진</h3>
+                                <div id="img-contents" class="img-contents">
+                                    <img src="./img/oneus/cast.png" alt="cast">
+                                    <div class="cast-name">원어스</div>
+                                </div>
+                            </div> <!-- casting -->
+
+                            <div class="notice">
+                                <h3>공지사항</h3>
+                                <p>
+                                    ※ 예매자는 공연 안내사항에 동의한 것으로 간주합니다. 본 내용은 상황에 따라 추가, 변경될 수 있습니다.<br>
+                                    공연 관람에 지장이나 불이익을 받지 않도록 관람 전 공연 안내사항을 수시로 확인 바랍니다.<br>
+                                    <br>
+                                    [티켓 오픈 일정 안내]<br>
+                                    - ONEUS 공식팬클럽 TOMOON 3기 인증 : 2022년 9월 30일(금) 14:00 ~ 2022년 10월 6일(목) 11:59<br>
+                                    - ONEUS 공식팬클럽 TOMOON 3기 선예매 : 2022년 10월 4일(화) 20:00 ~ 2022년 10월 6일(목) 11:59<br>
+                                    - 일반 예매 오픈 : 2022년 10월 6일(목) 20:00<br>
+                                    <br>
+                                    <strong>[본인확인안내]<br>
+                                    - 본 공연은 암표 거래 및 불법 양도를 방지하기 위해 현장에서 본인확인을 진행하오니 본인확인이 가능한 지정 유효 신분증을 반드시 지참하시기 바랍니다.</strong><br>
+                                    * 지정 유효 신분증(원본/실물에 한함) : 주민등록증, 운전면허증, 여권, 학생증(사진, 이름, 생년월일, 학교직인 포함), 청소년증, 외국인 등록증<br>
+                                    - 본인 명의가 아닌 ID로 예매한 경우 신분증과 증빙서류를 모두 지참하더라도 예매자 명의와 실 관람자 명의가 다르므로 입장이 불가합니다.<br>
+                                    예매 시 반드시 실 관람자의 명의로 예매하시기 바라며, 이로 인한 티켓의 취소 및 환불은 불가합니다.<br>
+                                    * 티켓의 양도양수는 원칙적으로 불가하며 직계가족의 경우 예매자와 실관객의 가족관계가 증명될 경우에 한하여 본인 확인 인정이 가능합니다.<br>
+                                    본인의 신분증, 예매 내역서, 가족관계 증빙서류 원본(등본 또는 가족관계증명서)를 지참하시어 방문하시길 바랍니다.<br>
+                                    <br>
+                                    ※ 본 공연은 안심예매 서비스가 적용됩니다. 예매에 참고하여 주시기 바랍니다.<br>
+                                    - 안심예매란? <a href="http://ticket.interpark.com/service/serviceGuide.asp">http://ticket.interpark.com/service/serviceGuide.asp</a><br>
+                                </p>
+                                <div id="img-contents" class="img-contents">
+                                    <div class="hidden"></div>
+                                    <img src="./img/oneus/notice.png" alt="notice" class="last-img">
+                                    <img src="./img/oneus/admission.png" alt="admission" class="last-img">
+                                </div>
+                                <div class="click-btn" id="click-btn">
+                                    <div class="flex-box">
+                                        <span class="on">공지사항 더보기</span><span class="off">접기</span>
+                                        <img src="./img/arrow_down.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div> <!-- notice -->
+
+                            <div class="booking">
+                                <h3>예매안내</h3>
+                                <div class="img-contents">
+                                    <img src="./img/oneus/booking.png" alt="booking">
+                                </div>
+                            </div> <!-- booking -->
+
+                            <div class="seat">
+                                <h3>좌석안내</h3>
+                                <div class="img-contents">
+                                    <img src="./img/oneus/seat.png" alt="seat">
+                                </div>
+                            </div> <!-- seat -->
+
+                            <div class="ticket">
+                                <h3>티켓 배송 및 수령 안내</h3>
+                                <div class="img-contents">
+                                    <img src="./img/oneus/ticket.png" alt="ticket">
+                                </div>
+                            </div> <!-- ticket -->
+
+                            <div class="hall">
+                                <h3>시설안내</h3>
+                                <div class="img-contents">
+                                    <img src="./img/oneus/hall.png" alt="hall">
+                                    <img src="./img/oneus/hall2.png" alt="hall2">
+                                </div> 
+                            </div> <!-- hall -->
+                        </div> <!-- container -->
+                    </div> <!-- contents-list -->
+                </div> <!-- detail-wrap -->
+            </div> <!-- content-wrap -->
+        </main> <!-- main -->
+
+        <footer>
+            <div class="container">
+                <div class="flex-box">
+                    <div class="left-contents">
+                        <h2>Let's Blue Square Together</h2>
+                        <br>
+                        <address>
+                            주소: 서울 용산구 이태원로 294&nbsp;&nbsp;<span>Tel</span> . 1544-1591&nbsp;&nbsp;<span>E-mail. bluesquare@interpark.com</span>
+                        </address>
+                        <p>COPYRIGHT &copy; INTERPARK THEATER. ALL RIGHT RESERVED</p>
+                    </div> <!-- left-contents -->
+    
+                    <div class="right-contents">
+                        <ul class="footer-menu">
+                            <li>Menu
+                                <ul class="menu-contents">
+                                    <li><a href="../../../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                                    <li><a href="../../../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                                    <li><a href="../../../../Venue/Venue_Guidance/shinhan.html">대관안내</a></li>
+                                    <li><a href="../../../../Visit/How_to_come/how_to_come.html">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li>Guide
+                                <ul class="menu-contents">
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">윤리경영/제보</a></li>
+                                    <li>
+                                        <form action="#" method="post">
+                                            <select name="site" id="site">
+                                                <option value="">관련사이트</option>
+                                                <option value="http://www.stage631.com/">스테이지631</option>
+                                                <option value="http://www.shinhancard.com">신한카드</option>
+                                                <option value="https://www.mastercard.co.kr/">마스터카드</option>
+                                            </select>
+                                            <span><img src="./img/down_icon.png" alt="select arrow"></span>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Social
+                                <ul class="menu-contents social-menu">
+                                    <li><a href="https://www.instagram.com/bluesquare_food_culture/" target="_blank">Instagram</a></li>
+                                    <li><a href="https://ko-kr.facebook.com/BlueSquare.page/" target="_blank">Facebook</a></xli>
+                                    <li><a href="https://youtu.be/0SyccwSAaUQ" target="_blank">Youtube</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!-- footer-menu -->
+                    </div> <!-- right-contents -->
+                    
+                    <div class="large-only footer-title">
+                        <h1>Bl<span style="font-family: 'Pretendard';">u</span>e&ZeroWidthSpace; Sq<span style="font-family: 'Pretendard';">u</span>are</h1>
+                    </div>
+                </div> <!-- flex-box -->                
+            </div> <!-- container -->
+
+            <div class="large-only line">
+                <span></span>
+            </div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+    <script>AOS.init();</script>
+</body>
+</html>

@@ -1,0 +1,1098 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/pretendard/Pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Nanum+Gothic:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 16px "Pretendard", "Nanum Gothic", "맑은 고딕";
+  color: black;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  display: block;
+}
+
+header,
+nav,
+main,
+article,
+section,
+footer {
+  display: block;
+}
+
+@keyframes rollingleft1 { /* 원본용 */
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.01% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rollingleft2 { /* 클론용 */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    padding: 0;
+  }
+}
+
+.mobile-only {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.large-only {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .large-only {
+    display: block;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+header .swiper {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+header .swiper .swiper-container {
+  position: relative;
+}
+header .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+  width: 100%;
+}
+header .swiper .swiper-wrapper .swiper-slide .video-container {
+  position: relative;
+}
+header .swiper .swiper-wrapper .swiper-slide .video-container .player {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+header .swiper .swiper-wrapper .swiper-slide .video-container .player video {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text {
+  transform: translateY(-170%);
+  color: #fff;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text .title {
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.063em;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text .subtitle {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text .text {
+  max-width: 400px;
+  line-height: 1.8rem;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text .text p {
+  font-size: 13px;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text .text a {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.031em;
+}
+header .swiper .swiper-wrapper .swiper-slide .all_text .text a .point {
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+  font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  header .swiper .swiper-wrapper .swiper-slide .all_text {
+    transform: translateY(-110%);
+  }
+  header .swiper .swiper-wrapper .swiper-slide .all_text .title {
+    font-size: 80px;
+  }
+  header .swiper .swiper-wrapper .swiper-slide .all_text .subtitle {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  header .swiper .swiper-wrapper .swiper-slide .all_text .text {
+    max-width: 400px;
+  }
+  header .swiper .swiper-wrapper .swiper-slide .all_text .text p {
+    font-size: 16px;
+  }
+  header .swiper .swiper-wrapper .swiper-slide .all_text .text a {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 250px;
+  }
+}
+header .swiper .swiper-button-prev,
+header .swiper .swiper-button-next {
+  display: none;
+  width: 40px;
+  margin: 0 30px;
+  background-size: 100%;
+}
+@media screen and (min-width: 600px) {
+  header .swiper .swiper-button-prev,
+header .swiper .swiper-button-next {
+    display: block;
+  }
+}
+header .logo-menu-box {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+header .logo-menu-box .flex-box {
+  position: relative;
+  display: flex;
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box {
+    height: 100px;
+  }
+}
+header .logo-menu-box .flex-box .header-logo {
+  width: 15%;
+}
+header .logo-menu-box .flex-box .header-logo a img {
+  width: 48px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .header-logo a img {
+    width: 132px;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu {
+  display: none;
+  width: 590px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box nav.main-menu {
+    display: block;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li {
+  width: 20%;
+  line-height: 100px;
+  text-align: center;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li::after {
+  line-height: 0;
+  display: block;
+  content: "";
+  margin: 0 auto;
+  width: 60%;
+  height: 2px;
+  margin-top: -34px;
+  background-color: #000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:first-child::after {
+  width: 70%;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:hover::after {
+  transform: scale(1);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li a {
+  font-size: 18px;
+  color: #fff;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb {
+  position: absolute;
+  width: 100%;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li {
+  display: none;
+  line-height: 1;
+  margin-top: -1px;
+  background-color: rgb(0, 148, 214);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li::after {
+  display: none;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li a {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 20px;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li a:hover {
+  font-weight: 600;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:hover .lnb > li {
+  display: block;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:nth-child(3) .lnb {
+  width: 130%;
+  transform: translateX(-18px);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:nth-child(4) .lnb {
+  width: 130%;
+  transform: translateX(-18px);
+}
+header .logo-menu-box .flex-box .right-menu {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 188px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .logo-menu-box .flex-box .right-menu {
+    right: 0;
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul li {
+    line-height: 100px;
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul li a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif, Arial;
+}
+header .logo-menu-box .flex-box .right-menu ul li a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul li a::after {
+    margin-top: -34px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul li a:hover::after {
+    transform: scale(1);
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul li a img {
+  width: 30px;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu ul li a img {
+    width: 40px;
+  }
+}
+header .overlay {
+  display: block;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+@media screen and (min-width: 600px) {
+  header .overlay {
+    max-width: 580px;
+  }
+}
+header .overlay .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 55px;
+  font-weight: 100;
+  color: #f1f1f1;
+}
+header .overlay .overlay-menu {
+  position: relative;
+  top: 22%;
+  text-align: center;
+}
+header .overlay .overlay-menu ul li a {
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff;
+  padding: 15px 0;
+}
+header .overlay .overlay-menu ul li a.on {
+  color: rgb(0, 148, 214);
+  transform: skew(-15deg);
+}
+header .overlay .overlay-menu ul li ul li {
+  display: none;
+}
+header .overlay .overlay-menu ul li ul li.on {
+  display: block;
+}
+header .overlay .overlay-menu ul li ul li a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+}
+header .overlay .overlay-menu ul li ul li a:hover, header .overlay .overlay-menu ul li ul li a:focus {
+  transform: skew(0);
+}
+header .overlay .overlay-menu ul li ul li a::after {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+header .overlay .overlay-menu ul li ul li a:hover::after {
+  width: 100%;
+}
+header .intro-text {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  color: white;
+  line-height: 40px;
+}
+header .intro-text h1 {
+  line-height: 50px;
+  margin-bottom: 40px;
+  font-size: 33px;
+}
+header .intro-text h1 span {
+  font-size: 50px;
+}
+header .intro-text a {
+  margin-top: 5vh;
+  color: white;
+  font-size: 21px;
+}
+header .intro-text p {
+  font-size: 14px;
+}
+header .intro-text p:last-child {
+  margin-top: 10px;
+  font-size: 13px;
+}
+@media screen and (min-width: 600px) {
+  header .intro-text {
+    top: 120px;
+    left: 20px;
+  }
+  header .intro-text h1 {
+    line-height: 55px;
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  header .intro-text h1 span {
+    font-size: 80px;
+  }
+  header .intro-text p {
+    font-size: 16px;
+  }
+  header .intro-text p:last-child {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .intro-text {
+    top: 180px;
+    left: 50px;
+  }
+}
+
+main {
+  position: relative;
+  text-align: center;
+}
+main h1 {
+  font-size: 0;
+}
+main h2 {
+  margin-top: 266px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: calc(24px + 2vw);
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -1px;
+}
+main h2::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+main h2 span {
+  font-weight: 600;
+}
+main .flow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .flow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  margin-top: 350px;
+  margin-bottom: 250px;
+}
+main .flow .flow-wrap {
+  width: 580px;
+  height: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .flow .flow-wrap .roller {
+  position: absolute;
+  height: 100%;
+}
+main .flow .flow-wrap .roller .flow-img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 9px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+main .flow .flow-wrap .roller .flow-img li {
+  padding-right: 30px;
+}
+main .flow .flow-wrap .roller .flow-img li img {
+  margin: 100px 0;
+  width: 200px;
+  height: 250px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 600px) {
+  main .flow .flow-wrap .roller .flow-img li img {
+    width: 240px;
+    height: 290px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .flow .flow-wrap .roller .flow-img li img {
+    width: 280px;
+    height: 330px;
+  }
+}
+main .flow .original {
+  animation: 50s linear 0s infinite normal forwards running rollingleft1;
+}
+main .flow .clone {
+  animation: 50s linear 0s infinite normal none running rollingleft2;
+}
+main .ticket-intro {
+  margin-bottom: 266px;
+}
+main .ticket-intro .ticket-poster img {
+  width: 270px;
+  height: 380px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  box-shadow: 8px 8px 3px gray;
+}
+main .ticket-intro .ticket-text {
+  border-bottom: 1px solid #000;
+}
+main .ticket-intro .ticket-text .show-info-ing {
+  width: 60px;
+  padding: 5px;
+  background-color: crimson;
+}
+main .ticket-intro .ticket-text .show-info-ing p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+main .ticket-intro .ticket-text .show-info-schedule {
+  width: 70px;
+  padding: 5px;
+  background-color: #ccc;
+}
+main .ticket-intro .ticket-text .show-info-schedule p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+main .ticket-intro .ticket-text .ticket-intro-text {
+  text-align: left;
+}
+main .ticket-intro .ticket-text .ticket-intro-text h3 {
+  margin: 10px 0;
+  font-size: 38px;
+}
+main .ticket-intro .ticket-text .ticket-intro-text .date {
+  font-size: 13px;
+  margin: 10px 0;
+}
+main .ticket-intro .ticket-text .ticket-intro-text ul li {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  line-height: 30px;
+}
+main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(1) p:last-child, main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(2) p:last-child {
+  padding-left: 67px;
+}
+main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(3) p:last-child, main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(4) p:last-child {
+  padding-left: 40px;
+}
+main .ticket-intro .ticket-text .ticket-intro-text ul li p:first-child {
+  font-weight: 600;
+}
+main .ticket-intro .ticket-text .detail-booking-button {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul li {
+  margin-right: 10px;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul li:last-child {
+  background-color: #000;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul li:last-child a {
+  color: #fff;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul li a {
+  position: relative;
+  width: 130px;
+  padding: 12px 0;
+  border: 1px solid #000;
+  text-align: left;
+  text-indent: 20px;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul li a img {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 20px;
+}
+main .ticket-intro .ticket-text .detail-booking-button ul li a .ticket {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: 25px;
+}
+@media screen and (min-width: 600px) {
+  main .ticket-intro .left-img {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    justify-content: right;
+  }
+  main .ticket-intro .left-img .first-content {
+    position: absolute;
+    left: 0;
+    width: 50%;
+  }
+  main .ticket-intro .left-img .last-content {
+    border-left: 1px solid #000;
+    width: 50%;
+  }
+  main .ticket-intro .right-img {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  main .ticket-intro .right-img .last-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    order: 2;
+    border-left: 1px solid #000;
+  }
+  main .ticket-intro .right-img .first-content {
+    width: 50%;
+    order: 1;
+  }
+  main .ticket-intro .ticket-poster a {
+    margin: 3.5vh 0;
+  }
+  main .ticket-intro .ticket-poster img {
+    margin: 0;
+    width: 250px;
+    height: 350px;
+    box-shadow: 8px 8px 3px gray;
+  }
+  main .ticket-intro .ticket-text {
+    border-bottom: 0;
+    margin: 5vh 0 5vh 2vw;
+  }
+  main .ticket-intro .ticket-text .show-info-ing {
+    width: 50px;
+  }
+  main .ticket-intro .ticket-text .show-info-ing p {
+    font-size: 13px;
+  }
+  main .ticket-intro .ticket-text .show-info-schedule {
+    width: 60px;
+  }
+  main .ticket-intro .ticket-text .show-info-schedule p {
+    font-size: 13px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text h3 {
+    margin: 10px 0;
+    font-size: 30px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text .date {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li:last-child {
+    margin-bottom: 50px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(1) p:last-child, main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(2) p:last-child {
+    padding-left: 47px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(3) p:last-child, main .ticket-intro .ticket-text .ticket-intro-text ul li:nth-child(4) p:last-child {
+    padding-left: 20px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li p {
+    font-size: 14px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li p:first-child {
+    font-weight: 600;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button {
+    margin-bottom: 0px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li {
+    margin-right: 10px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li a {
+    width: 120px;
+    text-indent: 15px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li a img {
+    top: 12px;
+    right: 15px;
+    width: 18px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li a .ticket {
+    top: 8px;
+    right: 12px;
+    width: 24px;
+  }
+}
+@media screen and (min-width: 800px) {
+  main .ticket-intro .left-img .first-content {
+    width: 60%;
+  }
+  main .ticket-intro .left-img .last-content {
+    width: 40%;
+  }
+  main .ticket-intro .right-img {
+    position: relative;
+  }
+  main .ticket-intro .right-img .last-content {
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 0;
+  }
+  main .ticket-intro .right-img .first-content {
+    border-right: 1px solid #000;
+    width: 45%;
+  }
+  main .ticket-intro .ticket-poster a {
+    margin: 3vh 0;
+  }
+  main .ticket-intro .ticket-poster img {
+    margin: 0;
+    width: 350px;
+    height: 510px;
+    box-shadow: 10px 10px 3px gray;
+  }
+  main .ticket-intro .ticket-text {
+    margin: 10vh 4vw 10vh 5vw;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text h3 {
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text .date {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li {
+    margin: 10px 0;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .ticket-intro .ticket-poster a {
+    margin: 7vh 0;
+  }
+  main .ticket-intro .ticket-poster img {
+    width: 350px;
+    height: 500px;
+    box-shadow: 15px 15px 3px gray;
+  }
+  main .ticket-intro .ticket-text {
+    margin: 15vh 8vw;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text h3 {
+    margin: 20px 0;
+    font-size: 38px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text .date {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .ticket-intro .ticket-poster a {
+    margin: 14vh 0;
+  }
+  main .ticket-intro .ticket-poster img {
+    width: 350px;
+    height: 500px;
+    box-shadow: 15px 15px 3px gray;
+  }
+  main .ticket-intro .ticket-text {
+    margin: 20vh 28%;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text h3 {
+    margin: 20px 0;
+    font-size: 38px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text .date {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  main .ticket-intro .ticket-text .ticket-intro-text ul li p {
+    font-size: 16px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button {
+    margin-bottom: 50px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li {
+    margin-right: 15px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li a {
+    width: 130px;
+    text-indent: 15px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li a img {
+    top: 12px;
+    right: 15px;
+    width: 16px;
+  }
+  main .ticket-intro .ticket-text .detail-booking-button ul li a .ticket {
+    top: 8px;
+    right: 12px;
+    width: 25px;
+  }
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 800px;
+  }
+}
+footer .flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box {
+    flex-direction: row;
+    height: 800px;
+  }
+}
+footer .flex-box .left-contents {
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+}
+footer .flex-box .left-contents h2 {
+  margin-left: -2px;
+  letter-spacing: -0.0769230769em;
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: normal;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents h2 {
+    margin-left: -3px;
+    font-size: 1.875em;
+  }
+}
+footer .flex-box .left-contents address {
+  line-height: 2;
+  font-style: normal;
+  font-size: 13px;
+}
+footer .flex-box .left-contents address span {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .left-contents p {
+  line-height: 2;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .right-contents {
+  width: 33%;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents {
+    width: 28%;
+  }
+}
+footer .flex-box .right-contents .footer-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents .footer-menu {
+    flex-direction: row;
+  }
+}
+footer .flex-box .right-contents .footer-menu > li {
+  padding-top: 56px;
+}
+footer .flex-box .right-contents .footer-menu li {
+  color: #fff;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 500;
+}
+footer .flex-box .right-contents .footer-menu li:last-child {
+  width: 62px;
+  font-family: "Montserrat", sans-serif, Arial;
+}
+footer .flex-box .right-contents .footer-menu li:last-child > .social-menu {
+  margin-top: 34px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents {
+  margin-top: 35px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a {
+  padding-bottom: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a:hover {
+  font-weight: bold;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li:last-child > a {
+  padding-bottom: 0;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form {
+  position: relative;
+  margin-top: -3px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select {
+  width: 92px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select::-ms-expand {
+  display: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select option {
+  color: #fff;
+  background-color: black;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span {
+  width: 18px;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span img {
+  width: 100%;
+  transition: all 0.3s;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select:focus + span > img {
+  transform: rotate(180deg);
+}
+footer .flex-box .footer-title {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+footer .flex-box .footer-title h1 {
+  font-size: calc(38px + 11.2vw);
+  font-family: "Lora";
+  font-weight: 500;
+}
+footer .line {
+  position: relative;
+}
+footer .line span {
+  position: absolute;
+  bottom: 275px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}

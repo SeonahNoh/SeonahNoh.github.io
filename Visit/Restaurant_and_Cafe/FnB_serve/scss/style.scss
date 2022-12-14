@@ -1,0 +1,28 @@
+// *** 중단점 ***
+$break-mobile: 320px;         // 320~559 
+$break-small-tablet: 600px;   // 600~ 1023 
+$break-large-tablet: 1024px;  // 1024~1399 
+$break-desktop: 1400px;       // 1400~
+
+
+// *** 폰트 크기 ***
+$title-font-size: 38px;       // 제목
+$sub-title-font-size: 18px;   // 본문 안의 제목
+$tab-font-size: 18px;         // 본문 안의 탭 메뉴
+$sub-tab-font-size: 16px;     // 탭 안의 다시 탭 메뉴
+$text-font-size: 16px;        // 본문
+$mini-text-font-size: 13px;   // 작은 본문
+
+
+// *** 폰트 종류 ***
+$kor-font: 'Pretendard','Nanum Gothic','맑은 고딕';
+$eng-font: 'Montserrat',sans-serif,Arial;
+$point-eng: 'Lora', serif;
+
+
+// *** 회색 컬러 사용 ***
+$gray-font: #b2b2b2;
+$gray-border: #ccc;
+$gray-bg: #eee;
+
+$point-color: rgb(0, 148, 214);

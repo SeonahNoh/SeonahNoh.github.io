@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타태그 설정 시작 -->
+    <meta name="title" property="og:title" content="BlueSquare">
+    <meta name="images" property="og:image" content="./img/meta_img.png">
+    <meta name="description" property="og:description" content="풍성한 즐거움을 제공하는 복합문화공간, 블루스퀘어">
+    <meta name="type" property="og:type" content="article">
+    <!-- 메타태그 설정 끝 -->
+    <!-- favicon 설정 시작 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon 설정 끝 -->
+    <link rel="stylesheet" href="./css/FAQ.css" type="text/css">
+    <title>BLUE SQUARE</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/02fac5dfa7.js" crossorigin="anonymous"></script>
+    <script src="./js/FAQ.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-menu-box">
+                <div class="container">
+                    <div class="flex-box">
+                        <div class="header-logo">
+                            <a href="../../index.html" class="mobile-only"><img src="./img/logo_only.png" alt="logo"></a>
+                            <a href="../../index.html" class="large-only hover-change"><img src="./img/logo_black.png" alt="logo"></a>
+                        </div>
+    
+                        <nav class="main-menu">
+                            <ul class="gnb">
+                                <li>
+                                    <a href="../../About/Overview/overview.html">블루스퀘어</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../About/Overview/overview.html">기관소개</a></li>
+                                        <li><a href="../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../Performance/Tickets/tickets.html">공연안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../Performance/Tickets/tickets.html">공연예매</a></li>
+                                        <li><a href="../../Performance/All_Schedule/all_schedule.html">공연일정</a></li>
+                                        <li><a href="../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../Venue/Venue_Guidance/shinhan.html">대관안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../Venue/Venue_Guidance/shinhan.html">대관시설/대관료</a></li>
+                                        <li><a href="../../Venue/Application/application.html">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">이용안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">레스토랑&카페</a></li>
+                                        <li><a href="../../Visit/Culture_Space/culture_space.html">문화공간</a></li>
+                                        <li><a href="../../Visit/How_to_come/how_to_come.html">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../Community/Notice/notice.html">고객센터</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../Community/Notice/notice.html">공지사항</a></li>
+                                        <li><a href="../../Community/FAQ/FAQ.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul> <!-- gnb -->
+                        </nav> <!-- main-menu-->
+    
+                        <div class="right-menu">
+                            <ul>                                
+                                <li class="mobile-only left"><a href="../../Performance/Tickets/tickets.html"><img src="./img/ticket_white.png" alt="ticket"></a></li>
+                                <li class="mobile-only right"><a href="#"><img src="./img/menu_white.png" alt="menu"></a></li>
+                                <li class="large-only"><a href="../../Performance/Tickets/tickets.html">TICKET</a></li>
+                                <li class="large-only"><a href="../../login/login.html">LOG IN</a></li>
+                                <li class="large-only"><a href="../../join/join.html">JOIN</a></li>
+                            </ul>
+                        </div> <!-- right-menu -->
+                    </div> <!-- flex-box -->
+                </div> <!-- container -->
+            </div> <!-- logo-menu-box -->
+
+            <div class="mobile-only overlay">
+                <a href="#" class="close-btn">&times;</a>
+                <div class="overlay-menu">
+                    <ul>
+                        <li>
+                            <a href="#">블루스퀘어</a>
+                            <ul>
+                                <li><a href="../../About/Overview/overview.html">기관소개</a></li>
+                                <li><a href="../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">공연안내</a>
+                            <ul>
+                                <li><a href="../../Performance/Tickets/tickets.html">공연예매</a></li>
+                                <li><a href="../../Performance/All_Schedule/all_schedule.html">공연일정</a></li>
+                                <li><a href="../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">대관안내</a>
+                            <ul>
+                                <li><a href="../../Venue/Venue_Guidance/shinhan.html">대관시설/대관료</a></li>
+                                <li><a href="../../Venue/Application/application.html">대관신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul>
+                                <li><a href="../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">레스토랑&카페</a></li>
+                                <li><a href="../../Visit/Culture_Space/culture_space.html">문화공간</a></li>
+                                <li><a href="../../Visit/How_to_come/how_to_come.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul>
+                                <li><a href="../../Community/Notice/notice.html">공지사항</a></li>
+                                <li><a href="../../Community/FAQ/FAQ.html">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <li style="padding-top:30px;"><a href="../../login/login.html" style="font-size: 16px;">LOG IN</a></li>
+                        <li><a href="../../join/join.html" style="font-size: 16px;">JOIN</a></li>
+                    </ul> 
+                </div> <!-- overlay-menu -->
+            </div> <!-- overlay -->
+        </header> <!-- header -->
+
+        <main>
+            <div class="container">
+                <h1>FAQ</h1>
+            </div>
+
+            <ul class="tab-menu">
+                <li><a href="#" class="underline">전체</a></li>
+                <li><a href="#">공연</a></li>
+                <li><a href="#">예매</a></li>
+                <li><a href="#">관람</a></li>
+                <li><a href="#">편의</a></li>
+                <li><a href="#">교통</a></li>
+            </ul>
+            
+            <div class="container">
+                <section class="show tab-menu1">
+                    <h2>전체</h2>
+                    <div class="accord-wrap">       
+                        <div class="btn-open">
+                            <a href="#">블루스퀘어에서는 어떤 공연을 볼 수 있나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 1,766석의 뮤지컬 공연장과 1300석(스탠딩 3000명)수용의 콘서트 공연장, 두 개의 전용 대극장으로 이루어진 전문공연장으로서 뮤지컬, 대중음악 장르를 수용할 수 있도록 구성되어 있습니다.
+                            </p>
+                        </div> <!-- accord-content -->                        
+                    
+                        <div class="btn-open">
+                            <a href="#">최근 공연 정보를 알고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                홈페이지 메뉴 중 공연안내(뮤지컬, 콘서트)를 통해 정보를 얻을 수 있습니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">예매 시 현장티켓 수령을 선택하였는데 티켓수령에 대해 알려주세요.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                티켓의 현장수령은 공연관람 1시간 30분 전부터
+                                공연장 각 매표소에서 신분증 또는 예매번호 확인 후 수령 가능합니다. <br>
+                                * 티켓 현장수령은 관람일 당일에만 가능하며, 미리 티켓을 받고자 하시는 분은 예매 시에 배송신청을 선택하여 주시기 바랍니다. <br>
+                                (단, 청소년, 장애인 및 국가유공자 할인 등은 현장에서 확인절차 후 티켓 수령이 가능하므로 배송이 불가합니다.)
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">환불은 어떻게 처리되는 건가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                <strong>신용카드 결제의 경우</strong><br>
+                                일반적으로 당사의 취소 처리가 완료되고 4~5일 후 카드사의 취소가 확인됩니다.
+                                (체크카드도 동일함.)
+                                예매 취소 시점과 해당 카드사의 환불 처리기준에 따라 취소금액의 환급방법과 환급일은
+                                다소 차이가 있을 수 있으며, 예매 취소 시 기존에 결제하였던 내역을 취소하며 최초
+                                결제하셨던 동일카드로 취소 시점에 따라 취소수수료와 배송료를 재승인 합니다.
+                                <br><br>
+
+                                <strong>온라인 입금의 경우</strong><br>
+                                예매 취소 시에 환불 계좌번호를 남기고, 그 계좌를 통해 취소수수료 및 이체수수료를
+                                제외한 금액을 환불 받습니다.
+                                취소 후 고객님의 계좌로 입금까지 대략 5~7일 정도가 소요됩니다. (주말 제외)
+                                환불은 반드시 예매자 본인 명의의 계좌로만 받으실 수 있습니다. 단, 예매자 본인 명의의
+                                계좌가 없을 경우에는 직계 가족 명의의 계좌에 한하여 가능하며, 이 경우 관계를
+                                증명할 수 있는 증빙서류를 팩스나 우편 등으로 인터파크INT 티켓 본사로 보내주셔야 합니다.
+                                <br><br>
+
+                                <strong>휴대폰 결제의 경우</strong><br>
+                                취소 신청 후 바로 취소 처리가 되며 취소 수수료를 제외한 티켓 금액 및
+                                예매수수료/핸드폰결제이용료가 취소 가능합니다.
+                                예매 취소 시 기존에 결제하셨던 내역을 취소하며 결제하셨던 동일 정보로
+                                취소 시점에 따라 취소수수료와 이미 티켓배송된 경우는 배송료를 재승인 합니다.
+                                <br><br>
+
+                                <strong>인터파크 S-Money 결제의 경우</strong><br>
+                                S-Money는 취소 후 바로 복원되며, 유효기간 내 재예매하실 수 있습니다.
+                                유효기간이 지난 S-Money에 대해서는 복원되지 않습니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">예매취소시 유의사항에 대해 알고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                1. 예매 후 7일까지 취소 시에는 취소수수료가 없습니다. <br>
+                                2. 예매 후 8일부터 취소 시에는 다음과 같이 취소수수료가 부과됩니다 <br>
+                                - 예매일 8일후~관람일 10일전까지: 뮤지컬, 콘서트 : 장당 4,000원 <br>
+                                - 관람일 9일전~관람일 7일전까지 : 티켓금액의 10% <br>
+                                - 관람일 6일전~관람일 3일전까지 : 티켓금액의 20% <br>
+                                - 관람일 2일전~관람일 1일전까지 : 티켓금액의 30% <br>
+                                * 단, 위 1번과 2번 기간이 겹칠 경우 2번 기준이 우선 적용됩니다. <br>
+                                    위 2번의 경우에도 예매 당일 밤 12시 이전 취소 시에는 취소수수료가 없습니다. <br>
+                                * 취소 시 예매수수료는 예매 당일 밤 12시 이전까지 환불되며, 그 이후 기간에는 환불되지 않습니다. <br>
+                                * 주의 : 공연관람 당일의 티켓 교환 및 취소 불가합니다. <br>
+                                * 더 자세한 내용은 인터파크 (1544-1555) http://ticket.interpark.com/ 확인해 보시기 바랍니다. <br>
+                            </p>
+                        </div> <!-- accord-content -->                                               
+                    
+                        <div class="btn-open">
+                            <a href="#">예매하고자 하는 좌석위치가 궁금합니다. 좌석배치도는 어디서 보나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                홈페이지 메인의 좌석배치도에서 확인하실 수 있습니다. <a href="#" class="link">좌석배치도<i class="fa-solid fa-angle-right"></i></a>
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">관람 가능한 연령에 대해 알고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연별로 관람 가능 연령이 상이합니다. 자세한 내용은 예매페이지를 참고하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연장에 음식물 및 꽃다발 반입이 가능한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연 관람 중 소음이나 냄새로 주변 관객에게 방해가 될 수 있는 물품은 반입을 금지하고 있으며,
+                                부피가 큰 물건, 음식물, 꽃다발 등은 공연 전 물품보관소에 맡겨주시기 바랍니다.
+                                (단, 생수는 반입 가능)
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연 촬영, 녹음, 녹화가 가능한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                사전에 협의되지 않은 공연 중 사진촬영, 녹음, 녹화는 금지하고 있습니다.
+                                관객 여러분의 자발적인 협조 부탁드리며, 커튼콜 촬영 가능 여부는 예매페이지를 참고하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연 시작 시간에 늦으면 공연관람이 불가한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연 시작 후에는 입장이 제한되며, 공연 진행 흐름과 당일 객석 상황에 따라 예매한 좌석이 아닌 다른 좌석으로 안내 받거나 입장이 불가할 수 있습니다. 공연별로 늦은 관객 입장 시간이 상이하오니 자세한 내용은 현장에서 확인하시거나 블루스퀘어 콜센터(1544-1591)로 문의 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연보러갈 때 몇 시까지 도착해야 하나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연 전 여유있게 도착하셔서 본인 좌석에 앉아 편안한 마음으로 공연관람 준비를 해주시기 바랍니다. <br>
+                                * 마스터카드홀은 스탠딩 공연일경우 공연에 따라 예약번호순 또는 선착순으로 입장하는 경우가 있습니다.
+                                입장시간과 자세한 사항은 주최측 또는 예매페이지를 확인하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연장 내에 식음료 공간에 대해 알려주세요.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                자세한 사항은 <a href="#" class="go-to">이용안내</a>를 참조하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">어린이 놀이방 시설이용이 가능한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 어린이 놀이시설을 보유하고 있지 않습니다.
+                            </p>
+                        </div> <!-- accord-content -->                       
+                    
+                        <div class="btn-open">
+                            <a href="#">물품보관소를 이용하고 싶습니다</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                물품보관소는 신한카드홀 객석1층 로비에 마련되어 있습니다.
+                                사용료는 신한카드홀 관람객에 한하여 무료이며 번호표를 교환해가는 방식으로 이용하실 수 있습니다. 단, 귀중품 및 현금은 보관되지 않습니다.
+                                마스터카드홀 관람객은 마스터카드홀 객석1~2층 로비에 구비된 물품보관캐비닛을 이용하여 주시기 바랍니다
+                            </p>
+                        </div> <!-- accord-content -->                       
+                    
+                        <div class="btn-open">
+                            <a href="#">오페라글라스를 대여하고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                신한카드홀 관람객에 한해 신한카드홀 객석2층(L층) 주차정산창구에서 대여해 드리고 있습니다. 
+                                대여료는 4,000원이며 본인 신분증을 맡기고 대여가 가능합니다. <br>
+                                ※ 오페라글라스는 선착순 대여로 조기에 마감 될 수 있으며, 고객의 부주의로 인한 파손 시에는 수리비가 발생합니다.
+                            </p>
+                        </div> <!-- accord-content -->                        
+                    
+                        <div class="btn-open">
+                            <a href="#">무릎담요를 대여하고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                신한카드홀 관람객은 <br>
+                                객석 1층 : 물품보관소 <br>
+                                객석 3층 : 3층 데스크 <br>
+                                에서 대여해드리고 있으며, 신분증 보관과 함께 성함/연락처 작성 후 무료로 대여가 가능합니다.
+                            </p>
+                        </div> <!-- accord-content -->                       
+                    
+                        <div class="btn-open">
+                            <a href="#">대중교통을 이용하고자 합니다. 어떻게 가야하나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 한강진역(6호선) 2번, 3번 출구 사이 지하연결통로와 연결되어 있습니다.
+                                자세한 사항은 <a href="#" class="go-to">오시는 길</a>을 참조하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">자가 이용 시 주차에 대해 안내해주세요.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어 주차장은 상시 만차되며 공연장 주변의 교통이 매우 혼잡하여 주차에 많은 시간이 걸리오니 대중교통을 이용해 주시기 바랍니다. <br><br>
+                                1. 주차장 운영시간 : 07:00 - 24:00 <br><br>
+                                2. 주차요금 <br>
+                                <table class="parking-table">
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>요금</th>
+                                        <th>비고</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>일반요금<span>(Visitor fee)</span></td>
+                                        <td>10분당 1,000원<span>(1,000won for 10min)</span></td>
+                                        <td>20분 이내 회차시 무료
+                                            20분 초과시 입차시간 기준으로 부과
+                                            무인정산기 이용</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>공연관객<span>(Audience)</span></td>
+                                        <td>4시간 이내 5,000원<span>(5,000won for 4hours)</span></td>
+                                        <td>
+                                            <b>당일 공연관객에 한하여 인터미션까지 공연장내에서 사전 정산가능</b><br>
+                                            * 시간초과시 일반요금 적용 <br>
+                                            * 무인정산기 할인 불가 <br>
+                                            * 공연 종료 후 30분 내 출차 : 유인정산</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>입점업체이용객<span>(Visitor to a store)</span></td>
+                                        <td>10분당 1,000원<span>(1,000won for 10min)</span></td>
+                                        <td>해당업체 문의 <br>무인정산기 이용</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3" style="text-align: center;">24:00 ~ 07:00 출차불가</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>장애인, 국가유공자<span>(The disabled, Men of national merit)</span></td>
+                                        <td>일반요금의 50% 할인<span>(50% off the visitor fees)</span></td>
+                                        <td>복지카드 및 유공자카드 소지자 탑승 및 운전 차량에 한하여 적용</td>
+                                    </tr>
+                                </table>
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open last-border">
+                            <a href="#">주차 (사전)정산은 어디서 해야 하나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 공연관람객에 한해 4시간 5,000원에 차량번호를 등록해 드리고 있습니다. <br>
+                                신한카드홀 관람객 : 신한카드홀 객석 2층(L층) 주차정산창구 <br>
+                                마스터카드홀 관람객 : 마스터카드홀 객석 1층(지하 3층) 물품보관소 <br><br>
+                                ※ 주차 사전정산 시 주의사항 <br>
+                                - 4시간 초과시 10분 당 1,000원이 부과됩니다.
+                                - 주차사전정산은 공연시작 1시간 전부터 가능합니다. <br>
+                                - 공연관람객에 한해 4시간 5,000원에 차량번호를 등록해 드리며, 4시간 초과시 10분 당 1,000원이 부과됩니다. <br>
+                                - 주차 및 교통난으로 인해 당일 관람이 불가하거나 관람을 포기한 경우 예매 취소 및 변경이 불가합니다.
+                            </p>
+                        </div> <!-- accord-content -->                  
+                    </div> <!-- accord-wrap -->
+                </section> <!-- tab-menu1 -->
+
+                <section class="tab-menu2">
+                    <h2>공연</h2>
+                    <div class="accord-wrap">       
+                        <div class="btn-open">
+                            <a href="#">블루스퀘어에서는 어떤 공연을 볼 수 있나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 1,766석의 뮤지컬 공연장과 1300석(스탠딩 3000명)수용의 콘서트 공연장, 두 개의 전용 대극장으로 이루어진 전문공연장으로서 뮤지컬, 대중음악 장르를 수용할 수 있도록 구성되어 있습니다.
+                            </p>
+                        </div> <!-- accord-content -->                        
+                    
+                        <div class="btn-open">
+                            <a href="#">최근 공연 정보를 알고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                홈페이지 메뉴 중 공연안내(뮤지컬, 콘서트)를 통해 정보를 얻을 수 있습니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                    </div> <!-- accord-wrap -->
+                </section> <!-- tab-menu2 -->
+
+                <section class="tab-menu3">
+                    <h2>예매</h2>
+                    <div class="accord-wrap">       
+                        <div class="btn-open">
+                            <a href="#">예매 시 현장티켓 수령을 선택하였는데 티켓수령에 대해 알려주세요.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                티켓의 현장수령은 공연관람 1시간 30분 전부터
+                                공연장 각 매표소에서 신분증 또는 예매번호 확인 후 수령 가능합니다. <br>
+                                * 티켓 현장수령은 관람일 당일에만 가능하며, 미리 티켓을 받고자 하시는 분은 예매 시에 배송신청을 선택하여 주시기 바랍니다. <br>
+                                (단, 청소년, 장애인 및 국가유공자 할인 등은 현장에서 확인절차 후 티켓 수령이 가능하므로 배송이 불가합니다.)
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">환불은 어떻게 처리되는 건가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                <strong>신용카드 결제의 경우</strong><br>
+                                일반적으로 당사의 취소 처리가 완료되고 4~5일 후 카드사의 취소가 확인됩니다.
+                                (체크카드도 동일함.)
+                                예매 취소 시점과 해당 카드사의 환불 처리기준에 따라 취소금액의 환급방법과 환급일은
+                                다소 차이가 있을 수 있으며, 예매 취소 시 기존에 결제하였던 내역을 취소하며 최초
+                                결제하셨던 동일카드로 취소 시점에 따라 취소수수료와 배송료를 재승인 합니다.
+                                <br><br>
+
+                                <strong>온라인 입금의 경우</strong><br>
+                                예매 취소 시에 환불 계좌번호를 남기고, 그 계좌를 통해 취소수수료 및 이체수수료를
+                                제외한 금액을 환불 받습니다.
+                                취소 후 고객님의 계좌로 입금까지 대략 5~7일 정도가 소요됩니다. (주말 제외)
+                                환불은 반드시 예매자 본인 명의의 계좌로만 받으실 수 있습니다. 단, 예매자 본인 명의의
+                                계좌가 없을 경우에는 직계 가족 명의의 계좌에 한하여 가능하며, 이 경우 관계를
+                                증명할 수 있는 증빙서류를 팩스나 우편 등으로 인터파크INT 티켓 본사로 보내주셔야 합니다.
+                                <br><br>
+
+                                <strong>휴대폰 결제의 경우</strong><br>
+                                취소 신청 후 바로 취소 처리가 되며 취소 수수료를 제외한 티켓 금액 및
+                                예매수수료/핸드폰결제이용료가 취소 가능합니다.
+                                예매 취소 시 기존에 결제하셨던 내역을 취소하며 결제하셨던 동일 정보로
+                                취소 시점에 따라 취소수수료와 이미 티켓배송된 경우는 배송료를 재승인 합니다.
+                                <br><br>
+
+                                <strong>인터파크 S-Money 결제의 경우</strong><br>
+                                S-Money는 취소 후 바로 복원되며, 유효기간 내 재예매하실 수 있습니다.
+                                유효기간이 지난 S-Money에 대해서는 복원되지 않습니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">예매취소시 유의사항에 대해 알고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                1. 예매 후 7일까지 취소 시에는 취소수수료가 없습니다. <br>
+                                2. 예매 후 8일부터 취소 시에는 다음과 같이 취소수수료가 부과됩니다 <br>
+                                - 예매일 8일후~관람일 10일전까지: 뮤지컬, 콘서트 : 장당 4,000원 <br>
+                                - 관람일 9일전~관람일 7일전까지 : 티켓금액의 10% <br>
+                                - 관람일 6일전~관람일 3일전까지 : 티켓금액의 20% <br>
+                                - 관람일 2일전~관람일 1일전까지 : 티켓금액의 30% <br>
+                                * 단, 위 1번과 2번 기간이 겹칠 경우 2번 기준이 우선 적용됩니다. <br>
+                                    위 2번의 경우에도 예매 당일 밤 12시 이전 취소 시에는 취소수수료가 없습니다. <br>
+                                * 취소 시 예매수수료는 예매 당일 밤 12시 이전까지 환불되며, 그 이후 기간에는 환불되지 않습니다. <br>
+                                * 주의 : 공연관람 당일의 티켓 교환 및 취소 불가합니다. <br>
+                                * 더 자세한 내용은 인터파크 (1544-1555) http://ticket.interpark.com/ 확인해 보시기 바랍니다. <br>
+                            </p>
+                        </div> <!-- accord-content -->                                               
+                    
+                        <div class="btn-open">
+                            <a href="#">예매하고자 하는 좌석위치가 궁금합니다. 좌석배치도는 어디서 보나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                홈페이지 메인의 좌석배치도에서 확인하실 수 있습니다. <a href="#" class="link">좌석배치도<i class="fa-solid fa-angle-right"></i></a>
+                            </p>
+                        </div> <!-- accord-content -->
+                    </div> <!-- accord-wrap -->
+                </section> <!-- tab-menu3 -->
+
+                <section class="tab-menu4">
+                    <h2>관람</h2>
+                    <div class="accord-wrap">       
+                        <div class="btn-open">
+                            <a href="#">관람 가능한 연령에 대해 알고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연별로 관람 가능 연령이 상이합니다. 자세한 내용은 예매페이지를 참고하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연장에 음식물 및 꽃다발 반입이 가능한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연 관람 중 소음이나 냄새로 주변 관객에게 방해가 될 수 있는 물품은 반입을 금지하고 있으며,
+                                부피가 큰 물건, 음식물, 꽃다발 등은 공연 전 물품보관소에 맡겨주시기 바랍니다.
+                                (단, 생수는 반입 가능)
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연 촬영, 녹음, 녹화가 가능한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                사전에 협의되지 않은 공연 중 사진촬영, 녹음, 녹화는 금지하고 있습니다.
+                                관객 여러분의 자발적인 협조 부탁드리며, 커튼콜 촬영 가능 여부는 예매페이지를 참고하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연 시작 시간에 늦으면 공연관람이 불가한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연 시작 후에는 입장이 제한되며, 공연 진행 흐름과 당일 객석 상황에 따라 예매한 좌석이 아닌 다른 좌석으로 안내 받거나 입장이 불가할 수 있습니다. 공연별로 늦은 관객 입장 시간이 상이하오니 자세한 내용은 현장에서 확인하시거나 블루스퀘어 콜센터(1544-1591)로 문의 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">공연보러갈 때 몇 시까지 도착해야 하나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                공연 전 여유있게 도착하셔서 본인 좌석에 앉아 편안한 마음으로 공연관람 준비를 해주시기 바랍니다. <br>
+                                * 마스터카드홀은 스탠딩 공연일경우 공연에 따라 예약번호순 또는 선착순으로 입장하는 경우가 있습니다.
+                                입장시간과 자세한 사항은 주최측 또는 예매페이지를 확인하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                    </div> <!-- accord-wrap -->
+                </section> <!-- tab-menu4 -->
+
+                <section class="tab-menu5">
+                    <h2>편의</h2>
+                    <div class="accord-wrap">       
+                        <div class="btn-open">
+                            <a href="#">공연장 내에 식음료 공간에 대해 알려주세요.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                자세한 사항은 <a href="#" class="go-to">이용안내</a>를 참조하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">어린이 놀이방 시설이용이 가능한가요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 어린이 놀이시설을 보유하고 있지 않습니다.
+                            </p>
+                        </div> <!-- accord-content -->                       
+                    
+                        <div class="btn-open">
+                            <a href="#">물품보관소를 이용하고 싶습니다</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                물품보관소는 신한카드홀 객석1층 로비에 마련되어 있습니다.
+                                사용료는 신한카드홀 관람객에 한하여 무료이며 번호표를 교환해가는 방식으로 이용하실 수 있습니다. 단, 귀중품 및 현금은 보관되지 않습니다.
+                                마스터카드홀 관람객은 마스터카드홀 객석1~2층 로비에 구비된 물품보관캐비닛을 이용하여 주시기 바랍니다
+                            </p>
+                        </div> <!-- accord-content -->                       
+                    
+                        <div class="btn-open">
+                            <a href="#">오페라글라스를 대여하고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                신한카드홀 관람객에 한해 신한카드홀 객석2층(L층) 주차정산창구에서 대여해 드리고 있습니다. 
+                                대여료는 4,000원이며 본인 신분증을 맡기고 대여가 가능합니다. <br>
+                                ※ 오페라글라스는 선착순 대여로 조기에 마감 될 수 있으며, 고객의 부주의로 인한 파손 시에는 수리비가 발생합니다.
+                            </p>
+                        </div> <!-- accord-content -->                        
+                    
+                        <div class="btn-open">
+                            <a href="#">무릎담요를 대여하고 싶습니다.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                신한카드홀 관람객은 <br>
+                                객석 1층 : 물품보관소 <br>
+                                객석 3층 : 3층 데스크 <br>
+                                에서 대여해드리고 있으며, 신분증 보관과 함께 성함/연락처 작성 후 무료로 대여가 가능합니다.
+                            </p>
+                        </div> <!-- accord-content -->   
+                    </div> <!-- accord-wrap -->
+                </section> <!-- tab-menu5 -->
+
+                <section class="tab-menu6">
+                    <h2>교통</h2>
+                    <div class="accord-wrap">       
+                        <div class="btn-open">
+                            <a href="#">대중교통을 이용하고자 합니다. 어떻게 가야하나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 한강진역(6호선) 2번, 3번 출구 사이 지하연결통로와 연결되어 있습니다.
+                                자세한 사항은 <a href="#" class="go-to">오시는 길</a>을 참조하시기 바랍니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open">
+                            <a href="#">자가 이용 시 주차에 대해 안내해주세요.</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어 주차장은 상시 만차되며 공연장 주변의 교통이 매우 혼잡하여 주차에 많은 시간이 걸리오니 대중교통을 이용해 주시기 바랍니다. <br><br>
+                                1. 주차장 운영시간 : 07:00 - 24:00 <br><br>
+                                2. 주차요금 <br>
+                                <table class="parking-table">
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>요금</th>
+                                        <th>비고</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>일반요금<span>(Visitor fee)</span></td>
+                                        <td>10분당 1,000원<span>(1,000won for 10min)</span></td>
+                                        <td>20분 이내 회차시 무료
+                                            20분 초과시 입차시간 기준으로 부과
+                                            무인정산기 이용</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>공연관객<span>(Audience)</span></td>
+                                        <td>4시간 이내 5,000원<span>(5,000won for 4hours)</span></td>
+                                        <td>
+                                            <b>당일 공연관객에 한하여 인터미션까지 공연장내에서 사전 정산가능</b><br>
+                                            * 시간초과시 일반요금 적용 <br>
+                                            * 무인정산기 할인 불가 <br>
+                                            * 공연 종료 후 30분 내 출차 : 유인정산</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>입점업체이용객<span>(Visitor to a store)</span></td>
+                                        <td>10분당 1,000원<span>(1,000won for 10min)</span></td>
+                                        <td>해당업체 문의 <br>무인정산기 이용</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3" style="text-align: center;">24:00 ~ 07:00 출차불가</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>장애인, 국가유공자<span>(The disabled, Men of national merit)</span></td>
+                                        <td>일반요금의 50% 할인<span>(50% off the visitor fees)</span></td>
+                                        <td>복지카드 및 유공자카드 소지자 탑승 및 운전 차량에 한하여 적용</td>
+                                    </tr>
+                                </table>
+                            </p>
+                        </div> <!-- accord-content -->
+                                            
+                        <div class="btn-open last-border">
+                            <a href="#">주차 (사전)정산은 어디서 해야 하나요?</a>
+                            <div class="arrow-wrap">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div> <!-- btn-open -->
+                        <div class="accord-content">
+                            <p>
+                                블루스퀘어는 공연관람객에 한해 4시간 5,000원에 차량번호를 등록해 드리고 있습니다. <br>
+                                신한카드홀 관람객 : 신한카드홀 객석 2층(L층) 주차정산창구 <br>
+                                마스터카드홀 관람객 : 마스터카드홀 객석 1층(지하 3층) 물품보관소 <br><br>
+                                ※ 주차 사전정산 시 주의사항 <br>
+                                - 4시간 초과시 10분 당 1,000원이 부과됩니다.
+                                - 주차사전정산은 공연시작 1시간 전부터 가능합니다. <br>
+                                - 공연관람객에 한해 4시간 5,000원에 차량번호를 등록해 드리며, 4시간 초과시 10분 당 1,000원이 부과됩니다. <br>
+                                - 주차 및 교통난으로 인해 당일 관람이 불가하거나 관람을 포기한 경우 예매 취소 및 변경이 불가합니다.
+                            </p>
+                        </div> <!-- accord-content -->
+                    </div> <!-- accord-wrap -->
+                </section> <!-- tab-menu6 -->
+            </div> <!-- container -->
+        </main> <!-- main -->
+
+        <footer>
+            <div class="container">
+                <div class="flex-box">
+                    <div class="left-contents">
+                        <h2>Let's Blue Square Together</h2>
+                        <br>
+                        <address>
+                            주소: 서울 용산구 이태원로 294&nbsp;&nbsp;<span>Tel</span> . 1544-1591&nbsp;&nbsp;<span>E-mail. bluesquare@interpark.com</span>
+                        </address>
+                        <p>COPYRIGHT &copy; INTERPARK THEATER. ALL RIGHT RESERVED</p>
+                    </div> <!-- left-contents -->
+    
+                    <div class="right-contents">
+                        <ul class="footer-menu">
+                            <li>Menu
+                                <ul class="menu-contents">
+                                    <li><a href="../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                                    <li><a href="../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                                    <li><a href="../../Venue/Venue_Guidance/shinhan.html">대관안내</a></li>
+                                    <li><a href="../../Visit/How_to_come/how_to_come.html">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li>Guide
+                                <ul class="menu-contents">
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">윤리경영/제보</a></li>
+                                    <li>
+                                        <form action="#" method="post">
+                                            <select name="site" id="site">
+                                                <option value="">관련사이트</option>
+                                                <option value="http://www.stage631.com/">스테이지631</option>
+                                                <option value="http://www.shinhancard.com">신한카드</option>
+                                                <option value="https://www.mastercard.co.kr/">마스터카드</option>
+                                            </select>
+                                            <span><img src="./img/down_icon.png" alt="select arrow"></span>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Social
+                                <ul class="menu-contents social-menu">
+                                    <li><a href="https://www.instagram.com/bluesquare_food_culture/" target="_blank">Instagram</a></li>
+                                    <li><a href="https://ko-kr.facebook.com/BlueSquare.page/" target="_blank">Facebook</a></xli>
+                                    <li><a href="https://youtu.be/0SyccwSAaUQ" target="_blank">Youtube</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!-- footer-menu -->
+                    </div> <!-- right-contents -->
+                    
+                    <div class="large-only footer-title">
+                        <h1>Bl<span style="font-family: 'Pretendard';">u</span>e&ZeroWidthSpace; Sq<span style="font-family: 'Pretendard';">u</span>are</h1>
+                    </div>
+                </div> <!-- flex-box -->                
+            </div> <!-- container -->
+
+            <div class="large-only line">
+                <span></span>
+            </div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+</body>
+</html>

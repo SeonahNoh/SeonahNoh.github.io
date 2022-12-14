@@ -1,0 +1,1067 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/pretendard/Pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Nanum+Gothic:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 16px "Pretendard", "Nanum Gothic", "맑은 고딕";
+  color: black;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  display: block;
+}
+
+header,
+nav,
+main,
+article,
+section,
+footer {
+  display: block;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes poster-rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 5, 0, 20deg);
+  }
+}
+@keyframes poster-3d {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(-50px, 0px, 30px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    padding: 0;
+  }
+}
+
+.mobile-only {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.large-only {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .large-only {
+    display: block;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 250px;
+  }
+}
+header .logo-menu-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #f1f1f1;
+  }
+}
+header .logo-menu-box .flex-box {
+  position: relative;
+  display: flex;
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box {
+    height: 100px;
+  }
+}
+header .logo-menu-box .flex-box .header-logo {
+  width: 15%;
+}
+header .logo-menu-box .flex-box .header-logo a img {
+  width: 48px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .header-logo a img {
+    width: 132px;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu {
+  display: none;
+  width: 590px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box nav.main-menu {
+    display: block;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li {
+  width: 20%;
+  line-height: 100px;
+  text-align: center;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li::after {
+  line-height: 0;
+  display: block;
+  content: "";
+  width: 60%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: -34px;
+  background-color: #000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:hover::after {
+  transform: scale(1);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:first-child::after {
+  width: 70%;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb {
+  position: absolute;
+  width: 100%;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li {
+  display: none;
+  line-height: 1;
+  margin-top: -1px;
+  background-color: rgb(0, 148, 214);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li::after {
+  display: none;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px 20px;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li a:hover {
+  font-weight: 600;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:hover .lnb > li {
+  display: block;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:nth-child(3) .lnb {
+  width: 130%;
+  transform: translateX(-18px);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:nth-child(4) .lnb {
+  width: 130%;
+  transform: translateX(-18px);
+}
+header .logo-menu-box .flex-box .right-menu {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 188px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .logo-menu-box .flex-box .right-menu {
+    right: 0;
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo-menu-box .flex-box .right-menu ul li a {
+  color: #000;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 600;
+}
+header .logo-menu-box .flex-box .right-menu ul li a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul li a:hover::after {
+    transform: scale(1);
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul li a img {
+  width: 30px;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu ul li a img {
+    width: 40px;
+  }
+}
+header .overlay {
+  display: block;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+@media screen and (min-width: 600px) {
+  header .overlay {
+    max-width: 580px;
+  }
+}
+header .overlay .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 55px;
+  font-weight: 100;
+  color: #f1f1f1;
+}
+header .overlay .overlay-menu {
+  position: relative;
+  top: 22%;
+  text-align: center;
+}
+header .overlay .overlay-menu ul li a {
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff;
+  padding: 15px 0;
+}
+header .overlay .overlay-menu ul li a.on {
+  color: rgb(0, 148, 214);
+  transform: skew(-15deg);
+}
+header .overlay .overlay-menu ul li ul li {
+  display: none;
+}
+header .overlay .overlay-menu ul li ul li.on {
+  display: block;
+}
+header .overlay .overlay-menu ul li ul li a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+}
+header .overlay .overlay-menu ul li ul li a:hover, header .overlay .overlay-menu ul li ul li a:focus {
+  transform: skew(0);
+}
+header .overlay .overlay-menu ul li ul li a::after {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+header .overlay .overlay-menu ul li ul li a:hover::after {
+  width: 100%;
+}
+
+main {
+  position: relative;
+}
+main h1 {
+  display: none;
+}
+main hr {
+  display: none;
+}
+main .detail-main .left-img {
+  position: relative;
+  height: 550px;
+  /* sns */
+}
+main .detail-main .left-img .ticket-poster {
+  text-align: center;
+}
+main .detail-main .left-img .ticket-poster .topWrap {
+  position: relative;
+}
+main .detail-main .left-img .ticket-poster .topWrap .container {
+  padding: 0;
+}
+main .detail-main .left-img .ticket-poster .topWrap .bg {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+main .detail-main .left-img .ticket-poster .topWrap .bg img {
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  object-fit: cover;
+}
+main .detail-main .left-img .ticket-poster .topWrap .content {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  padding: 2.2rem 2.5rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .detail-main .left-img .ticket-poster .topWrap .content .main-poster {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 250px;
+  margin-top: 50px;
+}
+main .detail-main .left-img .ticket-poster .topWrap .content .main-poster .poster {
+  width: 100%;
+  height: 350px;
+  vertical-align: top;
+  box-shadow: 0px 10px 5px gray;
+}
+main .detail-main .left-img .ticket-poster .topWrap .content .main-poster .posterBoxPlayBtn {
+  position: sticky;
+  position: absolute;
+  left: 12px;
+  bottom: 0.5rem;
+}
+main .detail-main .left-img .ticket-poster .topWrap .content .main-poster .posterBoxPlayBtn img {
+  width: 3rem;
+}
+main .detail-main .left-img .sns-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main .detail-main .left-img .sns-box li {
+  margin-left: 15px;
+}
+main .detail-main .left-img .sns-box li a {
+  position: relative;
+  width: 10%;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+main .detail-main .left-img .sns-box li a img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+main .detail-main .right-text {
+  position: relative;
+  animation: fadeInTop 1s;
+  width: 100%;
+}
+main .detail-main .right-text .ticket-intro-text {
+  text-align: left;
+}
+main .detail-main .right-text .ticket-intro-text .title-box {
+  margin-bottom: 40px;
+}
+main .detail-main .right-text .ticket-intro-text .title-box h2 {
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+main .detail-main .right-text .ticket-intro-text .title-box p {
+  font-size: 13px;
+}
+main .detail-main .right-text .ticket-intro-text .title-box .show-info-ing {
+  width: 70px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #ccc;
+}
+main .detail-main .right-text .ticket-intro-text .title-box .show-info-ing p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+main .detail-main .right-text .ticket-intro-text h3 {
+  margin: 10px 0;
+  font-size: 38px;
+}
+main .detail-main .right-text .ticket-intro-text .date {
+  font-size: 13px;
+  margin: 10px 0;
+}
+main .detail-main .right-text .ticket-intro-text ul li {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  line-height: 30px;
+}
+main .detail-main .right-text .ticket-intro-text ul li:last-child a:hover {
+  color: rgb(0, 148, 214);
+  transform: translateX(2px);
+  transition: ease 0.3s;
+}
+main .detail-main .right-text .ticket-intro-text ul li p:first-child {
+  width: 100px;
+  font-weight: 600;
+}
+main .detail-main .right-text .ticket-intro-text ul li p:last-child {
+  width: 60%;
+}
+main .detail-main .right-text .ticket-intro-text ul li p span {
+  color: rgb(0, 148, 214);
+}
+main .detail-main .right-text .ticket-intro-text ul li p .link:first-child {
+  color: #b2b2b2;
+}
+main .detail-main .right-text .ticket-intro-text ul li p .link:first-child:hover {
+  text-decoration: underline;
+}
+main .detail-main .right-text .ticket-intro-text ul li p .link:last-child:hover {
+  color: rgb(0, 148, 214);
+  transform: translateX(2px);
+  transition: ease 0.3s;
+}
+main .detail-main .right-text .ticket-intro-text ul li .all-price {
+  width: 60%;
+}
+main .detail-main .right-text .ticket-intro-text ul li .all-price p span {
+  color: rgb(0, 148, 214);
+}
+main .detail-main .right-text .info-booking-button {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+main .detail-main .right-text .info-booking-button ul {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+}
+main .detail-main .right-text .info-booking-button ul li {
+  text-align: center;
+}
+main .detail-main .right-text .info-booking-button ul li a {
+  padding: 20px 0;
+  font-weight: 600;
+}
+main .detail-main .right-text .info-booking-button ul li a img {
+  width: 30px;
+  transform: translate(35%, 30%);
+}
+main .detail-main .right-text .info-booking-button ul li:first-child {
+  width: 40%;
+  background-color: #ccc;
+}
+main .detail-main .right-text .info-booking-button ul li:first-child a {
+  margin-top: 2px;
+}
+main .detail-main .right-text .info-booking-button ul li:last-child {
+  width: 60%;
+  background-color: rgb(0, 148, 214);
+}
+main .detail-main .right-text .info-booking-button ul li:last-child a {
+  margin-top: 0px;
+  color: #fff;
+  padding: 0 20%;
+  transform: translate(0, 10%);
+}
+@media screen and (min-width: 600px) {
+  main .content #modal {
+    width: 60vw;
+    min-width: 580px;
+    height: 35vh;
+    min-height: 340px;
+    z-index: 10;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    background-color: #fff;
+  }
+  main .content .modal_header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+  main .content .modal_header .del-btn {
+    cursor: pointer;
+  }
+  main .content .modal_header .del-btn::before, main .content .modal_header .del-btn::after {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: #222;
+  }
+  main .content .modal_header .del-btn::before {
+    transform: rotate(45deg);
+  }
+  main .content .modal_header .del-btn::after {
+    transform: rotate(-45deg);
+  }
+  main .content .txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+  }
+  main .content .video-wrap {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+  }
+  main .content video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main h1 {
+    display: block;
+    margin-bottom: 58px;
+  }
+  main hr {
+    display: block;
+    border: 0;
+    border: 1px solid #ccc;
+  }
+  main .detail-main {
+    animation: fadeInTop 1s;
+    text-align: center;
+    margin-top: 70px;
+  }
+  main .detail-main div.box {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  main .detail-main .left-img {
+    position: relative;
+    display: inline-block;
+    height: 570px;
+    /* sns */
+  }
+  main .detail-main .left-img .ticket-poster .topWrap {
+    text-align: center;
+  }
+  main .detail-main .left-img .ticket-poster .topWrap .container {
+    padding: 0 20px;
+  }
+  main .detail-main .left-img .ticket-poster .topWrap .bg {
+    display: none;
+  }
+  main .detail-main .left-img .ticket-poster .topWrap .content {
+    padding-top: 0;
+    background-color: transparent;
+  }
+  main .detail-main .left-img .ticket-poster .topWrap .content .main-poster {
+    width: 350px;
+    perspective: 500px;
+    margin-top: 0;
+  }
+  main .detail-main .left-img .ticket-poster .topWrap .content .main-poster .poster {
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+    margin: 0;
+    box-shadow: 10px 10px 3px gray;
+  }
+  main .detail-main .left-img .ticket-poster .topWrap .content .main-poster .poster:hover {
+    transform: rotate3d(0, 5, 0, 15deg);
+    transition: 1s;
+  }
+  main .detail-main .left-img .sns-box {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .detail-main .left-img .sns-box li {
+    margin-left: 15px;
+  }
+  main .detail-main .left-img .sns-box li a {
+    position: relative;
+    width: 10%;
+    padding: 18px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  main .detail-main .left-img .sns-box li a:hover {
+    background-color: rgb(0, 148, 214);
+    transform: translateY(-5px);
+    transition: ease 0.3s;
+  }
+  main .detail-main .left-img .sns-box li a img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  main .detail-main .right-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+  }
+  main .detail-main .right-text .ticket-intro-text {
+    text-align: left;
+  }
+  main .detail-main .right-text .ticket-intro-text h3 {
+    margin: 10px 0;
+    font-size: 26px;
+  }
+  main .detail-main .right-text .ticket-intro-text .date {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  main .detail-main .right-text .ticket-intro-text ul li {
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+    line-height: 30px;
+  }
+  main .detail-main .right-text .ticket-intro-text ul li p:first-child {
+    width: 100px;
+    font-weight: 600;
+  }
+  main .detail-main .right-text .ticket-intro-text ul li p:last-child {
+    width: 70%;
+  }
+  main .detail-main .right-text .ticket-intro-text ul li p span {
+    color: rgb(0, 148, 214);
+  }
+  main .detail-main .right-text .info-booking-button {
+    position: static;
+  }
+  main .detail-main .right-text .info-booking-button ul li {
+    margin-top: 110px;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  main .detail-main .right-text .info-booking-button ul li a {
+    position: relative;
+    padding: 14px 0;
+  }
+  main .detail-main .right-text .info-booking-button ul li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  main .detail-main .right-text .info-booking-button ul li:first-child {
+    width: 150px;
+  }
+  main .detail-main .right-text .info-booking-button ul li:last-child {
+    width: 150px;
+    background-color: black;
+  }
+  main .detail-main .right-text .info-booking-button ul li:last-child a {
+    transform: translate(0%, -10%);
+  }
+  main .detail-main .right-text .info-booking-button ul li:last-child a img {
+    transform: translate(20%, 30%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .right-text {
+    margin-left: 8%;
+  }
+  main .right-text .show-info-ing {
+    position: absolute;
+    left: 35%;
+  }
+  main .info-booking-button ul li a {
+    position: relative;
+    padding: 14px 0;
+  }
+  main .info-booking-button ul li:first-child {
+    width: 160px;
+  }
+  main .info-booking-button ul li:last-child {
+    width: 160px;
+    background-color: black;
+  }
+  main .info-booking-button ul li:last-child a {
+    transform: translate(0%, -10%);
+  }
+  main .info-booking-button ul li:last-child a img {
+    transform: translate(20%, 30%);
+  }
+}
+main .contents-list .container {
+  padding: 0;
+}
+main .contents-list .container > div {
+  margin: 150px 0;
+}
+main .contents-list .container > div h3 {
+  margin: 0 0 40px 0;
+  padding: 0 20px;
+}
+main .contents-list .container > div p {
+  line-height: 30px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+main .contents-list .img-contents {
+  text-align: center;
+}
+main .contents-list .img-contents:first-child img {
+  width: 100%;
+  background-color: aqua;
+  margin: 0;
+}
+main .contents-list .img-contents img {
+  width: 100%;
+  margin: 0;
+}
+main .contents-list .casting {
+  margin: 0 auto;
+}
+main .contents-list .casting img {
+  width: 30%;
+  border-radius: 50%;
+}
+main .contents-list .casting .cast-name {
+  margin-top: 20px;
+  font-weight: 600;
+}
+main .contents-list .notice a {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  main .contents-list .container {
+    padding: 0 20px;
+  }
+  main .contents-list .container > div {
+    padding: 70px 0px;
+    border: 1px solid #000;
+  }
+  main .contents-list .container > div h3 {
+    margin: 0 0 50px 20px;
+    font-size: 26px;
+  }
+  main .contents-list .container > div p {
+    margin-bottom: 80px;
+    margin-left: 20px;
+    line-height: 2;
+  }
+  main .contents-list .img-contents {
+    text-align: center;
+  }
+  main .contents-list .img-contents img {
+    width: 60%;
+    margin: 0;
+  }
+  main .contents-list .casting img {
+    width: 15%;
+  }
+  main .contents-list .casting .cast-name {
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  main .contents-list .notice a:hover {
+    color: #b2b2b2;
+  }
+  main .contents-list .event .box img {
+    width: 60%;
+  }
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 800px;
+  }
+}
+footer .flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box {
+    flex-direction: row;
+    height: 800px;
+  }
+}
+footer .flex-box .left-contents {
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+}
+footer .flex-box .left-contents h2 {
+  margin-left: -2px;
+  letter-spacing: -0.0769230769em;
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: normal;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents h2 {
+    margin-left: -3px;
+    font-size: 1.875em;
+  }
+}
+footer .flex-box .left-contents address {
+  line-height: 2;
+  font-style: normal;
+  font-size: 13px;
+}
+footer .flex-box .left-contents address span {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .left-contents p {
+  line-height: 2;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .right-contents {
+  width: 33%;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents {
+    width: 28%;
+  }
+}
+footer .flex-box .right-contents .footer-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents .footer-menu {
+    flex-direction: row;
+  }
+}
+footer .flex-box .right-contents .footer-menu > li {
+  padding-top: 56px;
+}
+footer .flex-box .right-contents .footer-menu li {
+  color: #fff;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 500;
+}
+footer .flex-box .right-contents .footer-menu li:last-child {
+  width: 62px;
+  font-family: "Montserrat", sans-serif, Arial;
+}
+footer .flex-box .right-contents .footer-menu li:last-child > .social-menu {
+  margin-top: 34px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents {
+  margin-top: 35px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a {
+  padding-bottom: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a:hover {
+  font-weight: bold;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li:last-child > a {
+  padding-bottom: 0;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form {
+  position: relative;
+  margin-top: -3px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select {
+  width: 92px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select::-ms-expand {
+  display: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select option {
+  color: #fff;
+  background-color: black;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span {
+  width: 18px;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span img {
+  width: 100%;
+  transition: all 0.3s;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select:focus + span > img {
+  transform: rotate(180deg);
+}
+footer .flex-box .footer-title {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+footer .flex-box .footer-title h1 {
+  font-size: calc(38px + 11.2vw);
+  font-family: "Lora";
+  font-weight: 500;
+}
+footer .line {
+  position: relative;
+}
+footer .line span {
+  position: absolute;
+  bottom: 275px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}

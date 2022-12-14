@@ -1,0 +1,869 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/pretendard/Pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Nanum+Gothic:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 16px "Pretendard", "Nanum Gothic", "맑은 고딕";
+  color: black;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  display: block;
+}
+
+header,
+nav,
+main,
+article,
+section,
+footer {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    padding: 0;
+  }
+}
+
+.mobile-only {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.large-only {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .large-only {
+    display: block;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveright {
+  from {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes moveleft {
+  from {
+    transform: translate(50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+header .header-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+header .header-bg picture {
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .header-bg .txt-wrap {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 60px;
+}
+@media screen and (min-width: 1024px) {
+  header .header-bg .txt-wrap {
+    font-size: 70px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .header-bg .txt-wrap {
+    width: 1400px;
+  }
+}
+header .header-bg .txt-wrap .txt1 {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  opacity: 0;
+  animation: moveright 1980ms forwards;
+}
+header .header-bg .txt-wrap .txt2 {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  animation: moveleft 2000ms forwards;
+}
+header .header-bg .txt-wrap .img-pos {
+  width: 100%;
+  height: 100%;
+}
+header .header-bg .txt-wrap .img-pos img {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 30%;
+  min-width: 180px;
+  max-width: 250px;
+  animation: rotateImg 6s linear infinite;
+}
+@media screen and (min-width: 1024px) {
+  header .header-bg .txt-wrap .img-pos img {
+    top: 115px;
+  }
+}
+header .logo-menu-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #f1f1f1;
+  }
+}
+header .logo-menu-box .flex-box {
+  position: relative;
+  display: flex;
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box {
+    height: 100px;
+  }
+}
+header .logo-menu-box .flex-box .header-logo {
+  width: 15%;
+}
+header .logo-menu-box .flex-box .header-logo a img {
+  width: 48px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .header-logo a img {
+    width: 132px;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu {
+  display: none;
+  width: 590px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box nav.main-menu {
+    display: block;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li {
+  width: 20%;
+  line-height: 100px;
+  text-align: center;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li::after {
+  line-height: 0;
+  display: block;
+  content: "";
+  width: 60%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: -34px;
+  background-color: #000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:hover::after {
+  transform: scale(1);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:first-child::after {
+  width: 70%;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li a {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb {
+  position: absolute;
+  width: 100%;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li {
+  display: none;
+  line-height: 1;
+  margin-top: -1px;
+  background-color: rgb(0, 148, 214);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li::after {
+  display: none;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li a {
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb li a:hover {
+  font-weight: 600;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:hover .lnb > li {
+  display: block;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:nth-child(3) .lnb {
+  width: 130%;
+  transform: translateX(-18px);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li:nth-child(4) .lnb {
+  width: 130%;
+  transform: translateX(-18px);
+}
+header .logo-menu-box .flex-box .right-menu {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 188px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .logo-menu-box .flex-box .right-menu {
+    right: 0;
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo-menu-box .flex-box .right-menu ul li a {
+  color: #000;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 600;
+}
+header .logo-menu-box .flex-box .right-menu ul li a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul li a:hover::after {
+    transform: scale(1);
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul li a img {
+  width: 30px;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu ul li a img {
+    width: 40px;
+  }
+}
+header .overlay {
+  display: block;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.96);
+}
+@media screen and (min-width: 600px) {
+  header .overlay {
+    max-width: 580px;
+  }
+}
+header .overlay .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 55px;
+  font-weight: 100;
+  color: #f1f1f1;
+}
+header .overlay .overlay-menu {
+  position: relative;
+  top: 22%;
+  text-align: center;
+}
+header .overlay .overlay-menu ul li a {
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff;
+  padding: 15px 0;
+}
+header .overlay .overlay-menu ul li a.on {
+  color: rgb(0, 148, 214);
+  transform: skew(-15deg);
+}
+header .overlay .overlay-menu ul li ul li {
+  display: none;
+}
+header .overlay .overlay-menu ul li ul li.on {
+  display: block;
+}
+header .overlay .overlay-menu ul li ul li a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+}
+header .overlay .overlay-menu ul li ul li a:hover, header .overlay .overlay-menu ul li ul li a:focus {
+  transform: skew(0);
+}
+header .overlay .overlay-menu ul li ul li a::after {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+header .overlay .overlay-menu ul li ul li a:hover::after {
+  width: 100%;
+}
+
+main {
+  margin: 266px 0;
+  line-height: 1.5em;
+}
+main h1 {
+  font-size: 26px;
+}
+@media screen and (min-width: 1024px) {
+  main h1 {
+    font-size: 38px;
+  }
+}
+main ul.tab {
+  margin-top: 58px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1024px) {
+  main ul.tab {
+    width: 1400px;
+    margin: 58px auto 50px;
+  }
+}
+main ul.tab::-webkit-scrollbar {
+  display: none;
+}
+main ul.tab li {
+  margin-right: 60px;
+}
+main ul.tab li:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 1024px) {
+  main ul.tab li {
+    margin-right: 120px;
+  }
+}
+main ul.tab li a::after {
+  margin-top: 10px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  background-color: #000;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+main ul.tab li a:hover {
+  font-weight: 600;
+}
+main ul.tab li a:hover::after {
+  transform: scale(1);
+}
+main ul.tab li a.clicked::after {
+  margin-top: 10px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  background-color: #000;
+  transform: scale(1);
+}
+main ul.tab li a.clicked {
+  font-weight: 600;
+}
+main .sub-tab {
+  width: 220px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+main .sub-tab li {
+  width: 100px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+}
+main .sub-tab li a.sub-tab-clicked {
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #cceaf7;
+}
+main .sub-tab li a:hover {
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #cceaf7;
+}
+main section > div {
+  display: none;
+}
+main section > div.active {
+  display: block;
+}
+main .venue-guidance > h2 {
+  display: none;
+}
+main .venue-guidance .venue-facility .flexbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .venue-facility .flexbox {
+    flex-direction: row;
+  }
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap .slide-img {
+  position: relative;
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap .slide-img img {
+  width: 100%;
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap .slide-btn {
+  cursor: pointer;
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap .slide-btn img {
+  width: 40px;
+  height: 40px;
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap .slide-btn .prev {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .venue-guidance .venue-facility .flexbox .slide-wrap .slide-btn .next {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap {
+  margin-top: 30px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .venue-facility .flexbox .intro-equip-wrap {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 16px;
+  }
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .intro {
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .intro {
+    width: 100%;
+  }
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .equipment-list {
+  margin-top: 30px;
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .equipment-list h3 {
+  margin-bottom: 10px;
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .equipment-list .btn-flex {
+  display: flex;
+  line-height: 30px;
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .equipment-list .btn-flex div {
+  width: 110px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .equipment-list .btn-flex .download {
+  width: 120px;
+  height: 28px;
+  font-size: 14px;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(0, 148, 214);
+}
+main .venue-guidance .venue-facility .flexbox .intro-equip-wrap .equipment-list .list1 {
+  margin-bottom: 10px;
+}
+main .venue-guidance .rental-fee {
+  line-height: 30px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .rental-fee {
+    font-size: 16px;
+  }
+}
+main .venue-guidance .rental-fee h2 {
+  position: relative;
+  font-size: 26px;
+  font-weight: normal;
+  padding-left: 13px;
+}
+main .venue-guidance .rental-fee h2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: rgb(0, 148, 214);
+}
+main .venue-guidance .rental-fee h3 {
+  font-weight: normal;
+  color: rgb(0, 148, 214);
+}
+main .venue-guidance .rental-fee .perform-fee .flexbox2 {
+  margin-top: 40px;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .rental-fee .perform-fee .flexbox2 {
+    display: flex;
+  }
+}
+main .venue-guidance .rental-fee .perform-fee .flexbox2 h3 {
+  width: 140px;
+}
+main .venue-guidance .rental-fee .perform-fee .text-indent {
+  padding: 0 14px;
+}
+main .venue-guidance .rental-fee .prepare-fee {
+  margin: 70px 0;
+}
+main .venue-guidance .rental-fee .prepare-fee .flexbox2 {
+  margin-top: 40px;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .rental-fee .prepare-fee .flexbox2 {
+    display: flex;
+  }
+}
+main .venue-guidance .rental-fee .prepare-fee .flexbox2 h3 {
+  width: 140px;
+}
+main .venue-guidance .rental-fee .agreement {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #eee;
+}
+@media screen and (min-width: 1024px) {
+  main .venue-guidance .rental-fee .agreement {
+    width: 1200px;
+  }
+}
+main .venue-guidance .rental-fee .agreement a {
+  display: inline-block;
+  color: rgb(0, 148, 214);
+  font-weight: 600;
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 800px;
+  }
+}
+footer .flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box {
+    flex-direction: row;
+    height: 800px;
+  }
+}
+footer .flex-box .left-contents {
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+}
+footer .flex-box .left-contents h2 {
+  margin-left: -2px;
+  letter-spacing: -0.0769230769em;
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: normal;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents h2 {
+    margin-left: -3px;
+    font-size: 1.875em;
+  }
+}
+footer .flex-box .left-contents address {
+  line-height: 2;
+  font-style: normal;
+  font-size: 13px;
+}
+footer .flex-box .left-contents address span {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .left-contents p {
+  line-height: 2;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .right-contents {
+  width: 33%;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents {
+    width: 28%;
+  }
+}
+footer .flex-box .right-contents .footer-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents .footer-menu {
+    flex-direction: row;
+  }
+}
+footer .flex-box .right-contents .footer-menu > li {
+  padding-top: 56px;
+}
+footer .flex-box .right-contents .footer-menu li {
+  color: #fff;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 500;
+}
+footer .flex-box .right-contents .footer-menu li:last-child {
+  width: 62px;
+  font-family: "Montserrat", sans-serif, Arial;
+}
+footer .flex-box .right-contents .footer-menu li:last-child > .social-menu {
+  margin-top: 34px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents {
+  margin-top: 35px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a {
+  padding-bottom: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a:hover {
+  font-weight: bold;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li:last-child > a {
+  padding-bottom: 0;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form {
+  position: relative;
+  margin-top: -3px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select {
+  width: 92px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select::-ms-expand {
+  display: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select option {
+  color: #fff;
+  background-color: black;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span {
+  width: 18px;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span img {
+  width: 100%;
+  transition: all 0.3s;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select:focus + span > img {
+  transform: rotate(180deg);
+}
+footer .flex-box .footer-title {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+footer .flex-box .footer-title h1 {
+  font-size: calc(38px + 11.2vw);
+  font-family: "Lora";
+  font-weight: 500;
+}
+footer .line {
+  position: relative;
+}
+footer .line span {
+  position: absolute;
+  bottom: 275px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}

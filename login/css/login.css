@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/pretendard/Pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&family=Nanum+Gothic:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 16px "Pretendard", "Nanum Gothic", "맑은 고딕";
+  color: black;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  display: block;
+}
+
+header,
+nav,
+main,
+article,
+section,
+footer {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    padding: 0;
+  }
+}
+
+.mobile-only {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.large-only {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .large-only {
+    display: block;
+  }
+}
+
+h2 {
+  font-size: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+  background-color: #000;
+}
+
+.go-home {
+  z-index: 99;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.go-home a {
+  color: #fff;
+}
+.go-home a::before {
+  display: inline-block;
+  content: "\f060";
+  font-family: "FontAwesome";
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.pos-wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.pos-wrap .login-wrap {
+  width: 100%;
+  min-width: 350px;
+  padding: 50px 40px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 600px) {
+  .pos-wrap .login-wrap {
+    margin: 0 auto;
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pos-wrap .login-wrap {
+    margin: 0 auto;
+    width: 610px;
+  }
+}
+.pos-wrap .login-wrap h1 {
+  margin-bottom: 58px;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 600;
+}
+.pos-wrap .login-wrap form label {
+  display: block;
+  padding-bottom: 13px;
+}
+.pos-wrap .login-wrap form input {
+  height: 50px;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 50px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.pos-wrap .login-wrap form input:focus {
+  outline: none;
+  border-color: #0094d6;
+  box-shadow: 0 0 2px #0094d6;
+}
+.pos-wrap .login-wrap form .id-box {
+  margin-bottom: 24px;
+}
+.pos-wrap .login-wrap form .id-box input {
+  background: url(../img/email_small.png) 10px center no-repeat;
+  background-size: 25px;
+}
+.pos-wrap .login-wrap form .id-box input:focus {
+  background: url(../img/email_active.png) 10px center no-repeat;
+  background-size: 25px;
+}
+.pos-wrap .login-wrap form .pw-box input {
+  background: url(../img/lock_small.png) 13.5px center no-repeat;
+  background-size: 20px;
+}
+.pos-wrap .login-wrap form .pw-box input:focus {
+  background: url(../img/lock_active.png) 13.5px center no-repeat;
+  background-size: 20px;
+}
+.pos-wrap .login-wrap form button {
+  margin-top: 40px;
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  background-color: #000;
+}
+.pos-wrap .login-wrap .flex-box {
+  margin-top: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+.pos-wrap .login-wrap .flex-box li {
+  padding: 0 10px;
+  border-right: 1px solid black;
+}
+.pos-wrap .login-wrap .flex-box li:first-child {
+  padding-left: 0;
+}
+.pos-wrap .login-wrap .flex-box li:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+.pos-wrap .login-wrap .flex-box li a {
+  font-size: 14px;
+}
+.pos-wrap .login-wrap .flex-box li a:hover {
+  text-decoration: underline;
+}
+.pos-wrap .login-wrap .sns-login {
+  margin-top: 30px;
+}
+.pos-wrap .login-wrap .sns-login div {
+  text-align: center;
+}
+.pos-wrap .login-wrap .sns-login div::before {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  margin-bottom: -14px;
+  background-color: #ccc;
+}
+.pos-wrap .login-wrap .sns-login div span {
+  color: #b2b2b2;
+  padding: 0 10px;
+  background-color: #fff;
+}
+.pos-wrap .login-wrap .sns-login .sns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+.pos-wrap .login-wrap .sns-login .sns li {
+  padding-left: 20px;
+}
+.pos-wrap .login-wrap .sns-login .sns li:first-child {
+  padding-left: 0;
+}
+.pos-wrap .login-wrap .sns-login .sns li img {
+  width: 50px;
+}

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 메타태그 설정 시작 -->
+    <meta name="title" property="og:title" content="BlueSquare">
+    <meta name="images" property="og:image" content="./img/meta_img.png">
+    <meta name="description" property="og:description" content="풍성한 즐거움을 제공하는 복합문화공간, 블루스퀘어">
+    <meta name="type" property="og:type" content="article">
+    <!-- 메타태그 설정 끝 -->
+    <!-- favicon 설정 시작 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon 설정 끝 -->
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/Tickets_detail.js"></script>
+    <title>BLUE SQUARE</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-menu-box">
+                <div class="container">
+                    <div class="flex-box">
+                        <div class="header-logo">
+                            <a href="../../../../index.html" class="mobile-only"><img src="./img/logo_only.png" alt="logo"></a>
+                            <a href="../../../../index.html" class="large-only hover-change"><img src="./img/logo_black.png" alt="logo"></a>
+                        </div>
+    
+                        <nav class="main-menu">
+                            <ul class="gnb">
+                                <li>
+                                    <a href="../../../../About/Overview/overview.html">블루스퀘어</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../About/Overview/overview.html">기관소개</a></li>
+                                        <li><a href="../../../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Performance/Tickets/tickets.html">공연안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Performance/Tickets/tickets.html">공연예매</a></li>
+                                        <li><a href="../../../../Performance/All_Schedule/all_schedule.html">공연일정</a></li>
+                                        <li><a href="../../../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Venue/Venue_Guidance/shinhan.html">대관안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Venue/Venue_Guidance/shinhan.html">대관시설/대관료</a></li>
+                                        <li><a href="../../../../Venue/Application/application.html">대관신청</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">이용안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">레스토랑&카페</a></li>
+                                        <li><a href="../../../../Visit/Culture_Space/culture_space.html">문화공간</a></li>
+                                        <li><a href="../../../../Visit/How_to_come/how_to_come.html">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="../../../../Community/Notice/notice.html">고객센터</a>
+                                    <ul class="lnb">
+                                        <li><a href="../../../../Community/Notice/notice.html">공지사항</a></li>
+                                        <li><a href="../../../../Community/FAQ/FAQ.html">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul> <!-- gnb -->
+                        </nav> <!-- main-menu-->
+    
+                        <div class="right-menu">
+                            <ul>                                
+                                <li class="mobile-only left"><a href="../../../../Performance/Tickets/tickets.html"><img src="./img/ticket_black.png" alt="ticket"></a></li>
+                                <li class="mobile-only right"><a href="#"><img src="./img/menu_black.png" alt="menu"></a></li>
+                                <li class="large-only"><a href="../../../../Performance/Tickets/tickets.html">TICKET</a></li>
+                                <li class="large-only"><a href="../../../../login/login.html">LOG IN</a></li>
+                                <li class="large-only"><a href="../../../../join/join.html">JOIN</a></li>
+                            </ul>
+                        </div> <!-- right-menu -->
+                    </div> <!-- flex-box -->
+                </div> <!-- container -->
+            </div> <!-- logo-menu-box -->
+
+            <div class="mobile-only overlay">
+                <a href="#" class="close-btn">&times;</a>
+                <div class="overlay-menu">
+                    <ul>
+                        <li>
+                            <a href="#">블루스퀘어</a>
+                            <ul>
+                                <li><a href="../../../../About/Overview/overview.html">기관소개</a></li>
+                                <li><a href="../../../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">공연안내</a>
+                            <ul>
+                                <li><a href="../../../../Performance/Tickets/tickets.html">공연예매</a></li>
+                                <li><a href="../../../../Performance/All_Schedule/all_schedule.html">공연일정</a></li>
+                                <li><a href="../../../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">대관안내</a>
+                            <ul>
+                                <li><a href="../../../../Venue/Venue_Guidance/shinhan.html">대관시설/대관료</a></li>
+                                <li><a href="../../../../Venue/Application/application.html">대관신청</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul>
+                                <li><a href="../../../../Visit/Restaurant_and_Cafe/restaurant_and_cafe.html">레스토랑&카페</a></li>
+                                <li><a href="../../../../Visit/Culture_Space/culture_space.html">문화공간</a></li>
+                                <li><a href="../../../../Visit/How_to_come/how_to_come.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul>
+                                <li><a href="../../../../Community/Notice/notice.html">공지사항</a></li>
+                                <li><a href="../../../../Community/FAQ/FAQ.html">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <li style="padding-top:30px;"><a href="../../../../login/login.html" style="font-size: 16px;">LOG IN</a></li>
+                        <li><a href="../../../../join/join.html" style="font-size: 16px;">JOIN</a></li>
+                    </ul> 
+                </div> <!-- overlay-menu -->
+            </div> <!-- overlay -->
+        </header> <!-- header -->
+
+        <main>
+            <div class="content-wrap">
+                <div class="detail-wrap">
+                    <div class="container">
+                        <h1 class="h1_line" data-aos="fade-right" data-aos-duration="800">상세보기</h1>
+                        <hr data-aos="fade-right" data-aos-duration="800">
+                    </div>
+                    
+                    <div class="detail-main">
+                        <div class="box">
+                            <div class="left-img">
+                                <div class="ticket-poster">
+                                    <div class="topWrap">
+                                        <div class="bg">
+                                            <img src="./img/poster.png" alt="poster">
+                                        </div>
+                                        <div class="content">
+                                            <div class="main-poster">
+                                                <img src="./img/poster.png" alt="elisabeth" class="poster">
+                                                
+                                                <a href="./moblie_video_page/mobile_video_page.html" class="posterBoxPlayBtn">
+                                                    <img src="./img/play_3e3e.png" alt="play">
+                                                </a>
+                                            </div>
+                                            <div id="modal">
+                                                <div class="modal_header">
+                                                    <div class="txt">관련 영상</div>
+                                                    <div class="del-btn">
+                                                        <img src="./img/delete.svg" alt="delete">
+                                                    </div>
+                                                </div>
+                                                <div class="video-wrap">
+                                                    <video autoplay loop muted id="video">
+                                                        <source src="./video/MoulinRouge.mp4" type="video/mp4" id="player">
+                                                        <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
+                                                    </video>
+                                                </div> <!-- video-wrap -->
+                                            </div> <!-- modal -->
+                                        </div> <!-- content -->
+                                    </div> <!-- topWrap -->
+                                </div> <!-- ticket-poster -->
+                                <div class="sns">
+                                        <ul class="sns-box">
+                                            <li><a href="https://www.instagram.com/moulinmusicalkr/" target="_blank"><img src="./img/sns-instagram.png" alt="instagram"></a></li>
+                                            <li><a href="https://www.facebook.com/moulinmusicalkr/" target="_blank"><img src="./img/sns-facebook.png" alt="facebook"></a></li>
+                                            <li><a href="https://www.youtube.com/c/cjmusical" target="_blank"><img src="./img/sns-youtube_white.png" alt="youtube"></a></li>
+                                        </ul>
+                                    </div> <!-- sns -->
+                            </div> <!-- left-img -->
+                            <div class="right-text">
+                                <div class="container">
+                                    <div class="ticket-intro-text">
+                                        <div class="title-box">
+                                            <div class="show-info-ing">
+                                                <p>공연 예정</p>
+                                            </div> <!-- show-info-ing -->
+                                            <h2>물랑루즈</h2>
+                                            <p>Moulin Rouge! The Musical</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>장르</p>
+                                                <p>뮤지컬</p>
+                                            </li>
+                                            <li>
+                                                <p>기간</p>
+                                                <p>2022.12.20 ~2023.03.05</p>
+                                            </li>
+                                            <li>
+                                                <p>장소</p>
+                                                <p>블루스퀘어 신한카드홀</p>
+                                            </li>
+                                            <li>
+                                                <p>시간</p>
+                                                <p>
+                                                    화,목,금 7시 30분 │ 수 2시, 7시 30분 │<br>
+                                                    토,일,공휴일 2시, 7시 30분 │ 월 공연 없음<br>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>관람등급</p>
+                                                <p>14세 이상 관람가</p>
+                                            </li>
+                                            <li> 
+                                                <p>관람시간</p>
+                                                <p>160분 (인터미션 : 20분)</p>
+                                            </li>
+                                            <li>
+                                                <p>사이트</p>
+                                                <p>
+                                                    <a href="https://moulinrougemusical.kr/" class="link">https://moulinrougemusical.kr/</a>
+                                                    <a href="https://moulinrougemusical.kr/" target="_blank" class="link">사이트 바로가기 ▶</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>가격</p>
+                                                <div class="all-price">
+                                                    <a href="#" class="price">전체가격 보기 ▶</a>
+                                                    <p>
+                                                        VIP석 &nbsp;<span>180,000원&nbsp;</span><br>
+                                                        R석 &nbsp;<span>150,000원&nbsp;</span><br>
+                                                        S석 &nbsp;<span>120,000원&nbsp;</span><br>
+                                                        A석 &nbsp;<span>90,000원&nbsp;</span>
+                                                    </p>
+                                                    
+                                                </div> <!-- all-price -->
+                                            </li>
+                                        </ul>  
+                                    </div> <!-- ticket-intro-text -->
+                                    <div class="info-booking-button">
+                                        <ul>
+                                            <li>
+                                                <a href="../../../Booking_Guide/booking_guide.html">예매안내</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">예매하기<img src="./img/ticket_white.png" alt="ticket_white" class="ticket"></a>
+                                            </li>
+                                        </ul>
+                                    </div> <!-- info-booking-button -->
+                                </div><!-- container -->
+                            </div> <!-- right-text -->
+                        </div> <!-- box -->
+                    </div> <!-- detail-main -->
+                    <div class="contents-list">
+                        <div class="container">
+                            <div class="casting">
+                                <h3>출연진</h3>
+                                <div class="box">
+                                    <div class="cast-list">
+                                        <ul>
+                                            <li>
+                                                <div class="cast-img">
+                                                    <img src="./img/moulin-rouge/cast/홍광호.png" alt="홍광호">
+                                                </div>
+                                                <div class="cast-text">
+                                                    <div class="cast-role">크리스티안</div>
+                                                    <div class="cast-name">홍광호</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cast-img">
+                                                    <img src="./img/moulin-rouge/cast/이충주.png" alt="이충주">
+                                                </div>
+                                                <div class="cast-text">
+                                                    <div class="cast-role">크리스티안</div>
+                                                    <div class="cast-name">이충주</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cast-img">
+                                                    <img src="./img/moulin-rouge/cast/아이비.png" alt="아이비">
+                                                </div>
+                                                <div class="cast-text">
+                                                    <div class="cast-role">사틴</div>
+                                                    <div class="cast-name">아이비</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cast-img">
+                                                    <img src="./img/moulin-rouge/cast/김지우.png" alt="김지우">
+                                                </div>
+                                                <div class="cast-text">
+                                                    <div class="cast-role">사틴</div>
+                                                    <div class="cast-name">김지우</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cast-img">
+                                                    <img src="./img/moulin-rouge/cast/김용수.png" alt="김용수">
+                                                </div>
+                                                <div class="cast-text">
+                                                    <div class="cast-role">지들러</div>
+                                                    <div class="cast-name">김용수</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cast-img">
+                                                    <img src="./img/moulin-rouge/cast/이정열.png" alt="이정열">
+                                                </div>
+                                                <div class="cast-text">
+                                                    <div class="cast-role">지들러</div>
+                                                    <div class="cast-name">이정열</div>
+                                                </div>
+                                            </li>
+                                            <div class="cast-hidden">
+                                                <li>
+                                                    <div class="cast-img">
+                                                        <img src="./img/moulin-rouge/cast/손준호.png" alt="손준호">
+                                                    </div>
+                                                    <div class="cast-text">
+                                                        <div class="cast-role">몬로스 공작</div>
+                                                        <div class="cast-name">손준호</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="cast-img">
+                                                        <img src="./img/moulin-rouge/cast/이창용.png" alt="이창용">
+                                                    </div>
+                                                    <div class="cast-text">
+                                                        <div class="cast-role">몬로스 공작</div>
+                                                        <div class="cast-name">이창용</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="cast-img">
+                                                        <img src="./img/moulin-rouge/cast/최호중.png" alt="최호중">
+                                                    </div>
+                                                    <div class="cast-text">
+                                                        <div class="cast-role">로트렉</div>
+                                                        <div class="cast-name">최호중</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="cast-img">
+                                                        <img src="./img/moulin-rouge/cast/정원영.png" alt="정원영">
+                                                    </div>
+                                                    <div class="cast-text">
+                                                        <div class="cast-role">로트렉</div>
+                                                        <div class="cast-name">정원영</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="cast-img">
+                                                        <img src="./img/moulin-rouge/cast/심새인.png" alt="심새인">
+                                                    </div>
+                                                    <div class="cast-text">
+                                                        <div class="cast-role">산티아고</div>
+                                                        <div class="cast-name">심새인</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="cast-img">
+                                                        <img src="./img/moulin-rouge/cast/심건우.png" alt="심건우">
+                                                    </div>
+                                                    <div class="cast-text">
+                                                        <div class="cast-role">산티아고</div>
+                                                        <div class="cast-name">심건우</div>
+                                                    </div>
+                                                </li>
+                                            </div> <!-- cast-hidden -->
+                                        </ul>    
+                                        <div id="toggled-btn" class="toggled-btn">
+                                            <div>
+                                                <span>출연진 더보기</span><span class="off">접기</span>
+                                                <img src="./img/arrow_down.png" alt="arrow">
+                                            </div>
+                                        </div>
+                                    </div> <!-- cast-list -->
+                                </div> <!-- box -->
+                            </div> <!-- casting -->
+
+                            <div class="notice">
+                                <h3>공지사항</h3>
+                                <p>
+                                    예매가능시간: 전일17시(월~토 관람 시)까지/전일 11시(일요일 관람 시)까지<br>
+                                    <strong>※ OP석 및 1층 1열, 1층 측면의 객석 일부는 무대 셋팅 후, 해외 창작진과의 협의를 거쳐 좌석 판매 여부가 확정됩니다.</strong><br>
+                                    ※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다.<br>
+                                    ※ 정부의 공연장 방역 수칙에 따라 운영사항이 변동될 수 있습니다. 예매 및 관람 시 예매 페이지에서 자세한 내용을 확인해주시기 바랍니다.<br>
+                                    <br>
+                                    ※ 원활한 티켓 예매를 위해 ‘취소 후 동일좌석 재예매 서비스’ 는 예매 오픈 후 30분후 이용하실 수 있습니다.
+                                </p>
+                                <div id="img-contents" class="img-contents">
+                                    <div class="hidden"></div>
+                                    <img src="./img/moulin-rouge/notice.png" alt="notice" class="last-img">
+                                    <img src="./img/moulin-rouge/notice2.png" alt="notice2" class="last-img">
+                                </div>
+                                <div class="click-btn" id="click-btn01">
+                                    <div class="flex-box">
+                                        <span class="on">공지사항 더보기</span><span class="off">접기</span>
+                                        <img src="./img/arrow_down.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div> <!-- notice -->
+
+                            <div class="sale">
+                                <h3>할인정보</h3>
+                                <div class="img-contents">
+                                    <div class="hidden"></div>
+                                    <img src="./img/moulin-rouge/sale.png" alt="sale" class="last-img">
+                                </div>
+                                <div class="click-btn" id="click-btn02">
+                                    <div class="flex-box">
+                                        <span class="on">할인정보 더보기</span><span class="off">접기</span>
+                                        <img src="./img/arrow_down.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div> <!-- sale -->
+
+                            <div class="schedule">
+                                <h3>캐스팅 스케줄</h3>
+                                <div class="img-contents">
+                                    <div class="hidden"></div>
+                                    <img src="./img/moulin-rouge/schedule.png" alt="schedule" class="last-img">
+                                </div>
+                                <div class="click-btn" id="click-btn03">
+                                    <div class="flex-box">
+                                        <span class="on">캐스팅 스케줄 더보기</span><span class="off">접기</span>
+                                        <img src="./img/arrow_down.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div> <!-- schedule -->
+
+                            <div class="introduce">
+                                <h3>공연소개</h3>
+                                <div class="img-contents">
+                                    <div class="hidden"></div>
+                                    <img src="./img/moulin-rouge/introduce.png" alt="introduce" class="last-img">
+                                </div>
+                                <div class="click-btn" id="click-btn04">
+                                    <div class="flex-box">
+                                        <span class="on">공연소개 더보기</span><span class="off">접기</span>
+                                        <img src="./img/arrow_down.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div> <!-- introduce -->
+
+                            <div class="event">
+                                <h3>이벤트</h3>
+                                <div class="box">
+                                    <img src="./img/moulin-rouge/event.png" alt="event">
+                                    <img src="./img/moulin-rouge/event2.png" alt="event">
+                                </div> <!-- box -->
+                            </div> <!-- event -->
+                        </div> <!-- container -->
+                    </div> <!-- contents-list -->
+                </div> <!-- detail-wrap -->
+
+                <div class="price-wrap">
+                    <div id="price_modal">
+                        <div class="price_modal_header">
+                            <div class="price_title">가격정보 전체보기</div>
+                            <div class="price-del-btn">
+                                <img src="./img/delete.svg" alt="delete">
+                            </div>
+                        </div>
+                        <div class="titleWrap">
+                            <h2>가격정보 전체보기</h2>
+                            <span class="closeButton">
+                                <a href="#"><img src="./img/delete.svg" alt="delete">닫기</a>
+                            </span>
+                        </div>
+                        <div class="priceContents">
+                            <ul>
+                                <li>
+                                    <strong class="priceGrade">VIP석</strong>
+                                    <div class="basicPriceWrap">
+                                        <span>기본가</span>
+                                        <p>일반</p>
+                                        <p class="basicPrice">180,000원</p>
+                                    </div>
+                                    <div class="price-flex-box">
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>신용카드 할인</strong>
+                                                </li>
+                                                <li>신한카드(1인2매)5% - 171,000원</li>
+                                            </ul>
+                                        </div>
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>기본가 할인</strong>
+                                                </li>
+                                                <li>물랑루즈! 실물유료티켓소지자(재관람)10% - 162,000원</li>
+                                                <li>예술인패스(1인1매/예술인패스카드지참)10% - 162,000원</li>
+                                                <li>국가유공자(본인만)30% - 126,000원</li>
+                                                <li>장애인1~3급(중증)동반1인까지30% - 126,000원</li>
+                                                <li>장애인4~6급(경증)본인만30% - 126,000원</li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- price-flex-box -->
+                                </li>
+    
+                                <li>
+                                    <strong class="priceGrade">R석</strong>
+                                    <div class="basicPriceWrap">
+                                        <span>기본가</span>
+                                        <p>일반</p>
+                                        <p class="basicPrice">150,000원</p>
+                                    </div>
+                                    <div class="price-flex-box">
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>신용카드 할인</strong>
+                                                </li>
+                                                <li>신한카드(1인2매)5% - 142,500원</li>
+                                            </ul>
+                                        </div>
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>기본가 할인</strong>
+                                                </li>
+                                                <li>물랑루즈! 실물유료티켓소지자(재관람)10% - 135,000원</li>
+                                                <li>예술인패스(1인1매/예술인패스카드지참)10% - 135,000원</li>
+                                                <li>국가유공자(본인만)30% - 105,000원</li>
+                                                <li>장애인1~3급(중증)동반1인까지30% - 105,000원</li>
+                                                <li>장애인4~6급(경증)본인만30% - 105,000원</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <strong class="priceGrade">S석</strong>
+                                    <div class="basicPriceWrap">
+                                        <span>기본가</span>
+                                        <p>일반</p>
+                                        <p class="basicPrice">120,000원</p>
+                                    </div>
+                                    <div class="price-flex-box">
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>신용카드 할인</strong>
+                                                </li>
+                                                <li>신한카드(1인2매)5% - 114,000원</li>
+                                            </ul>
+                                        </div>
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>기본가 할인</strong>
+                                                </li>
+                                                <li>물랑루즈! 실물유료티켓소지자(재관람)10% - 108,000원</li>
+                                                <li>예술인패스(1인1매/예술인패스카드지참)10% - 108,000원</li>
+                                                <li>국가유공자(본인만)30% - 84,000원</li>
+                                                <li>장애인1~3급(중증)동반1인까지30% - 84,000원</li>
+                                                <li>장애인4~6급(경증)본인만30% - 84,000원</li>
+                                                <li>청소년(2004-2009년출생자/1인1매)30% - 84,000원</li>
+                                                <li>청소년(2005-2010년출생자/1인1매)30% - 84,000원</li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- price-flex-box -->
+                                </li>
+    
+                                <li>
+                                    <strong class="priceGrade">A석</strong>
+                                    <div class="basicPriceWrap">
+                                        <span>기본가</span>
+                                        <p>일반</p>
+                                        <p class="basicPrice">90,000원</p>
+                                    </div>
+                                    <div class="price-flex-box">
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>신용카드 할인</strong>
+                                                </li>
+                                                <li>신한카드(1인2매)5% - 85,500원</li>
+                                            </ul>
+                                        </div>
+                                        <div class="discountList">
+                                            <ul class="discountBasic">
+                                                <li class="discountBasicTitle">
+                                                    <strong>기본가 할인</strong>
+                                                </li>
+                                                <li>물랑루즈! 실물유료티켓소지자(재관람)10% - 81,000원</li>
+                                                <li>예술인패스(1인1매/예술인패스카드지참)10% - 81,000원</li>
+                                                <li>국가유공자(본인만)30% - 63,000원</li>
+                                                <li>장애인1~3급(중증)동반1인까지30% - 63,000원</li>
+                                                <li>장애인4~6급(경증)본인만30% - 63,000원</li>
+                                                <li>청소년(2004-2009년출생자/1인1매)30% - 63,000원</li>
+                                                <li>청소년(2005-2010년출생자/1인1매)30% - 63,000원</li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- price-flex-box -->
+                                </li>
+                            </ul>
+                    
+                        </div> <!-- priceContents -->
+                    </div> <!-- price_modal -->
+                </div> <!-- price-wrap -->
+            </div> <!-- content-wrap -->
+        </main> <!-- main -->
+
+        <footer>
+            <div class="container">
+                <div class="flex-box">
+                    <div class="left-contents">
+                        <h2>Let's Blue Square Together</h2>
+                        <br>
+                        <address>
+                            주소: 서울 용산구 이태원로 294&nbsp;&nbsp;<span>Tel</span> . 1544-1591&nbsp;&nbsp;<span>E-mail. bluesquare@interpark.com</span>
+                        </address>
+                        <p>COPYRIGHT &copy; INTERPARK THEATER. ALL RIGHT RESERVED</p>
+                    </div> <!-- left-contents -->
+    
+                    <div class="right-contents">
+                        <ul class="footer-menu">
+                            <li>Menu
+                                <ul class="menu-contents">
+                                    <li><a href="../../../../Performance/Booking_Guide/booking_guide.html">예매안내</a></li>
+                                    <li><a href="../../../../About/Seating_Charts/seating_charts.html">좌석배치도</a></li>
+                                    <li><a href="../../../../Venue/Venue_Guidance/shinhan.html">대관안내</a></li>
+                                    <li><a href="../../../../Visit/How_to_come/how_to_come.html">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li>Guide
+                                <ul class="menu-contents">
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">윤리경영/제보</a></li>
+                                    <li>
+                                        <form action="#" method="post">
+                                            <select name="site" id="site">
+                                                <option value="">관련사이트</option>
+                                                <option value="http://www.stage631.com/">스테이지631</option>
+                                                <option value="http://www.shinhancard.com">신한카드</option>
+                                                <option value="https://www.mastercard.co.kr/">마스터카드</option>
+                                            </select>
+                                            <span><img src="./img/down_icon.png" alt="select arrow"></span>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Social
+                                <ul class="menu-contents social-menu">
+                                    <li><a href="https://www.instagram.com/bluesquare_food_culture/" target="_blank">Instagram</a></li>
+                                    <li><a href="https://ko-kr.facebook.com/BlueSquare.page/" target="_blank">Facebook</a></xli>
+                                    <li><a href="https://youtu.be/0SyccwSAaUQ" target="_blank">Youtube</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!-- footer-menu -->
+                    </div> <!-- right-contents -->
+                    
+                    <div class="large-only footer-title">
+                        <h1>Bl<span style="font-family: 'Pretendard';">u</span>e&ZeroWidthSpace; Sq<span style="font-family: 'Pretendard';">u</span>are</h1>
+                    </div>
+                </div> <!-- flex-box -->                
+            </div> <!-- container -->
+
+            <div class="large-only line">
+                <span></span>
+            </div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+    <script>AOS.init();</script>
+</body>
+</html>

@@ -1,0 +1,721 @@
+@charset "UTF-8";
+@import url("https://webfontworld.github.io/pretendard/Pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&family=Nanum+Gothic:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 16px "Pretendard", "Nanum Gothic", "맑은 고딕";
+  color: black;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  display: block;
+}
+
+header,
+nav,
+main,
+article,
+section,
+footer {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    padding: 0;
+  }
+}
+
+.mobile-only {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+.large-only {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .large-only {
+    display: block;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+}
+header .header-bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+header .header-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .logo-menu-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .logo-menu-box .flex-box {
+  position: relative;
+  display: flex;
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box {
+    height: 100px;
+  }
+}
+header .logo-menu-box .flex-box .header-logo {
+  width: 15%;
+}
+header .logo-menu-box .flex-box .header-logo a img {
+  width: 48px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .header-logo a img {
+    width: 132px;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu {
+  display: none;
+  width: 504px;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box nav.main-menu {
+    display: block;
+  }
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li a {
+  font-size: 18px;
+  color: #fff;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #fff;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li a:hover::after {
+  transform: scale(1);
+}
+header .logo-menu-box .flex-box nav.main-menu .gnb li .lnb {
+  display: none;
+}
+header .logo-menu-box .flex-box .right-menu {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 110px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu {
+    width: 188px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .logo-menu-box .flex-box .right-menu {
+    right: 0;
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo-menu-box .flex-box .right-menu ul li a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif, Arial;
+}
+header .logo-menu-box .flex-box .right-menu ul li a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #fff;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu-box .flex-box .right-menu ul li a:hover::after {
+    transform: scale(1);
+  }
+}
+header .logo-menu-box .flex-box .right-menu ul li a img {
+  width: 30px;
+}
+@media screen and (min-width: 600px) {
+  header .logo-menu-box .flex-box .right-menu ul li a img {
+    width: 40px;
+  }
+}
+
+main {
+  margin: 266px 0;
+}
+main h1.title {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 58px;
+}
+@media screen and (min-width: 1024px) {
+  main h1.title {
+    font-size: 38px;
+  }
+}
+main .txtBox {
+  display: none;
+  height: 143px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  main .txtBox {
+    min-width: 560px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .txtBox {
+    min-width: 824px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .txtBox {
+    width: 1166px;
+  }
+}
+main .txtBox div {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+main .txtBox div img {
+  margin-right: 10px;
+  width: 32px;
+  height: 18px;
+}
+main .txtBox div p {
+  margin-top: -2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+main .ticketing {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 600px) {
+  main .ticketing {
+    margin-top: 212px;
+  }
+}
+main .ticketing .hall-title {
+  display: flex;
+  padding-top: 70px;
+  margin-bottom: 38px;
+}
+main .ticketing .hall-title .blue-sq {
+  width: 5px;
+  height: 30px;
+  margin-right: 8px;
+  margin-top: 3px;
+  background-color: #0094d6;
+}
+main .ticketing .hall-title h2 {
+  font-weight: 600;
+  font-size: 26px;
+}
+main .ticketing .way {
+  margin-bottom: 38px;
+}
+main .ticketing .way h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .way h3 {
+    font-size: 18px;
+  }
+}
+main .ticketing .way .internet {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+main .ticketing .way .internet p.bd {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .way .internet p.bd {
+    font-size: 16px;
+  }
+}
+main .ticketing .way .internet p.txt {
+  margin-top: -2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .way .internet p.txt {
+    margin-top: -1px;
+    font-size: 16px;
+  }
+}
+main .ticketing .way .internet p.txt a {
+  width: 67px;
+  color: #fff;
+  padding: 0 4px;
+  font-size: 13px;
+  background-color: #0094d6;
+  margin-left: 3px;
+}
+main .ticketing .way .internet p.txt a i {
+  margin-left: 5px;
+}
+main .ticketing .way .internet p.txt a:hover {
+  font-weight: 600;
+}
+main .ticketing .way .call {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+main .ticketing .way .call p.bd {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 23px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .way .call p.bd {
+    font-size: 16px;
+  }
+}
+main .ticketing .way .call p.txt {
+  margin-top: -2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .way .call p.txt {
+    margin-top: -1px;
+    font-size: 16px;
+  }
+}
+main .ticketing .fee h3 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .fee h3 {
+    font-size: 18px;
+  }
+}
+main .ticketing .fee .internet {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+main .ticketing .fee .internet p.bd {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .fee .internet p.bd {
+    font-size: 16px;
+  }
+}
+main .ticketing .fee .internet p.txt {
+  margin-top: -2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .fee .internet p.txt {
+    margin-top: -1px;
+    font-size: 16px;
+  }
+}
+main .ticketing .fee .call {
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+main .ticketing .fee .call p.bd {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 23px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .fee .call p.bd {
+    font-size: 16px;
+  }
+}
+main .ticketing .fee .call p.txt {
+  margin-top: -2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .ticketing .fee .call p.txt {
+    margin-top: -1px;
+    font-size: 16px;
+  }
+}
+main .calloff {
+  margin-bottom: 266px;
+}
+main .calloff .hall-title {
+  display: flex;
+  margin-bottom: 38px;
+}
+main .calloff .hall-title .blue-sq {
+  width: 5px;
+  height: 30px;
+  margin-right: 8px;
+  margin-top: 3px;
+  background-color: #0094d6;
+}
+main .calloff .hall-title h2 {
+  font-weight: 600;
+  font-size: 26px;
+}
+main .calloff .deadline {
+  margin-bottom: 38px;
+}
+main .calloff .deadline h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  main .calloff .deadline h3 {
+    font-size: 18px;
+  }
+}
+main .calloff .deadline p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1024px) {
+  main .calloff .deadline p {
+    font-size: 16px;
+  }
+}
+main .calloff .coff-fee h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  main .calloff .coff-fee h3 {
+    font-size: 18px;
+  }
+}
+main .calloff .coff-fee p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1024px) {
+  main .calloff .coff-fee p {
+    font-size: 16px;
+  }
+}
+main .calloff .coff-fee div.box {
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #eee;
+}
+@media screen and (min-width: 1024px) {
+  main .calloff .coff-fee div.box {
+    padding: 20px;
+    max-width: 800px;
+  }
+}
+main .calloff .coff-fee div.box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1024px) {
+  main .calloff .coff-fee div.box p {
+    font-size: 16px;
+  }
+}
+main .calloff .coff-fee div.box p span {
+  font-weight: 600;
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    height: 800px;
+  }
+}
+footer .flex-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box {
+    flex-direction: row;
+    height: 800px;
+  }
+}
+footer .flex-box .left-contents {
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+}
+footer .flex-box .left-contents h2 {
+  margin-left: -2px;
+  font-size: 1.25em;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: normal;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .left-contents h2 {
+    margin-left: -3px;
+    font-size: 1.875em;
+  }
+}
+footer .flex-box .left-contents address {
+  line-height: 2;
+  font-style: normal;
+  font-size: 13px;
+}
+footer .flex-box .left-contents address span {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .left-contents p {
+  line-height: 2;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif, Arial;
+  letter-spacing: -0.0769230769em;
+}
+footer .flex-box .right-contents {
+  width: 33%;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents {
+    width: 28%;
+  }
+}
+footer .flex-box .right-contents .footer-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  footer .flex-box .right-contents .footer-menu {
+    flex-direction: row;
+  }
+}
+footer .flex-box .right-contents .footer-menu > li {
+  padding-top: 56px;
+}
+footer .flex-box .right-contents .footer-menu li {
+  color: #fff;
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 500;
+}
+footer .flex-box .right-contents .footer-menu li:last-child {
+  width: 62px;
+  font-family: "Montserrat", sans-serif, Arial;
+}
+footer .flex-box .right-contents .footer-menu li:last-child > .social-menu {
+  margin-top: 34px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents {
+  margin-top: 35px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a {
+  padding-bottom: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li a:hover {
+  font-weight: bold;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li:last-child > a {
+  padding-bottom: 0;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form {
+  position: relative;
+  margin-top: -3px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select {
+  width: 92px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Pretendard", "Nanum Gothic", "맑은 고딕";
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select::-ms-expand {
+  display: none;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select option {
+  color: #fff;
+  background-color: black;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span {
+  width: 18px;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form span img {
+  width: 100%;
+  transition: all 0.3s;
+}
+footer .flex-box .right-contents .footer-menu li .menu-contents li form select:focus + span > img {
+  transform: rotate(180deg);
+}
+footer .flex-box .footer-title {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+footer .flex-box .footer-title h1 {
+  font-size: calc(38px + 9.8vw);
+  font-family: "Montserrat", sans-serif, Arial;
+  font-weight: 500;
+}
+footer .line {
+  position: relative;
+}
+footer .line span {
+  position: absolute;
+  bottom: 280px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
