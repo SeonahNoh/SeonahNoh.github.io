@@ -254,7 +254,7 @@ window.onload = function() {
             return false;
         }
 
-        window.location.assign('https://www.naver.com');
+        window.location.assign('../index.html');
     }
     // 회원가입 버튼 끝 =======
 }

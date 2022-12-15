@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 메타태그 설정 시작 -->
-    <meta name="title" property="og:title" content="BlueSquare">
-    <meta name="images" property="og:image" content="./img/meta_img.png">
-    <meta name="description" property="og:description" content="풍성한 즐거움을 제공하는 복합문화공간, 블루스퀘어">
-    <meta name="type" property="og:type" content="article">
-    <!-- 메타태그 설정 끝 -->
+    <meta name="author" content="jihyelim">
     <!-- favicon 설정 시작 -->
     <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
@@ -76,35 +72,6 @@
                             <div class="video-container">    
                                 <div class="player">
                                     <video autoplay loop muted>
-                                        <source src="video/elisabeth_main.mp4" type="video/mp4">
-                                        <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
-                                    </video>
-                                </div> <!-- player -->
-                                    <div class="all_text">
-                                        <div class="container">
-                                            <div class="title">ELISABETH</div>
-                                            <div class="subtitle">엘리자벳</div>
-                                            <div class="text">
-                                                <p>
-                                                    &lt;레베카&gt;, &lt;모차르트!&gt;를 탄생시킨 세계적인 거장<br>
-                                                    극작가 미하엘 쿤체와 작곡가 실베스터 르베이의 작품.<br>      
-                                                    10년간 제작 노하우를 총 망라한 마지막 시즌
-                                                </p>
-                                                <a href="./Tickets_detail/elisabeth/Tickets_detail_elisabeth.html">Buy a ticket &nbsp;<span class="point">&gt;</span></a>
-                                                <p>
-                                                    30<br>
-                                                    August - 
-                                                </p>
-                                            </div> <!-- text -->
-                                        </div> <!-- container -->
-                                    </div> <!-- all_text -->
-                            </div><!-- video-container --> 
-                        </div> <!-- swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="video-container">    
-                                <div class="player">
-                                    <video autoplay loop muted>
                                         <source src="./video/grand-expedition_main.mp4" type="video/mp4">
                                         <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
                                     </video>
@@ -129,34 +96,6 @@
                                 </div> <!-- player -->
                             </div><!-- video-container --> 
                         </div> <!-- swiper-slide -->
-                    
-                    <div class="swiper-slide">
-                        <div class="video-container">    
-                            <div class="player">
-                                <video autoplay loop muted>
-                                    <source src="./video/oneus_main.mp4" type="video/mp4">
-                                    <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
-                                </video>
-                                <div class="container">
-                                    <div class="all_text">
-                                        <div class="title">ONEUS CONCERT</div>
-                                        <div class="subtitle">원어스 콘서트</div>
-                                        <div class="text">
-                                            <p>
-                                                2022 ONEUS 1ST WORLD TOUR ‘REACH FOR US’ - SEOUL<br>
-                                                원어스의 첫 번째 월드투어 콘서트
-                                            </p>
-                                            <a href="./Tickets_detail/oneus/Tickets_detail_oneus.html">Buy a ticket &nbsp;<span class="point">&gt;</span></a>
-                                            <p>
-                                                30<br>
-                                                October - 
-                                            </p>
-                                        </div> <!-- text -->
-                                    </div> <!-- all_text -->
-                                </div> <!-- container -->
-                            </div> <!-- player -->
-                        </div><!-- video-container --> 
-                    </div> <!-- swiper-slide -->
 
                     <div class="swiper-slide">
                         <div class="video-container">    
@@ -514,7 +453,7 @@
                                 <div class="detail-booking-button">
                                     <ul>
                                         <li>
-                                            <a href="#">상세보기<img src="./img/search.png" alt="search"></a>
+                                            <a href="./Tickets_detail/oneus/Tickets_detail_oneus.html">상세보기<img src="./img/search.png" alt="search"></a>
                                         </li>
                                         <li>
                                             <a href="#">예매하기<img src="./img/ticket_white.png" alt="ticket_white" class="ticket"></a>

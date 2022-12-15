@@ -14,7 +14,7 @@ window.onload = function() {
     loginBtn.onclick = function(e) {
         e.preventDefault();
         if(idCheck() && pwCheck()) {
-            location.href = 'https://www.naver.com';
+            location.href = '../index.html';
         }
     }
 
