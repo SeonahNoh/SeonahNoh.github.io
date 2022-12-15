@@ -619,6 +619,7 @@ main .ticketing .way .internet p.txt {
   }
 }
 main .ticketing .way .internet p.txt a {
+  display: inline-block;
   width: 67px;
   color: #fff;
   padding: 0 4px;
