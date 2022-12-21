@@ -111,16 +111,7 @@ header .header-bg-bookpark {
 header .header-bg-bookpark img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@-webkit-keyframes left-right {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  object-fit: cover;
 }
 @keyframes left-right {
   0% {
@@ -130,25 +121,12 @@ header .header-bg-bookpark img {
     width: 100%;
   }
 }
-@-webkit-keyframes top-down {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
 @keyframes top-down {
   0% {
     height: 0;
   }
   100% {
     height: 100%;
-  }
-}
-@-webkit-keyframes fadeIn {
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -178,32 +156,28 @@ header .header-bg-bookpark .square .sqare-line1 {
   top: 0;
   width: 100%;
   height: 4px;
-  -webkit-animation: left-right 2s;
-          animation: left-right 2s;
+  animation: left-right 2s;
 }
 header .header-bg-bookpark .square .sqare-line2 {
   right: 0;
   top: 0;
   width: 4px;
   height: 100%;
-  -webkit-animation: top-down 2s;
-          animation: top-down 2s;
+  animation: top-down 2s;
 }
 header .header-bg-bookpark .square .sqare-line3 {
   right: 0;
   bottom: 0;
   width: 100%;
   height: 4px;
-  -webkit-animation: left-right 2s;
-          animation: left-right 2s;
+  animation: left-right 2s;
 }
 header .header-bg-bookpark .square .sqare-line4 {
   left: 0;
   bottom: 0;
   width: 4px;
   height: 100%;
-  -webkit-animation: top-down 2s;
-          animation: top-down 2s;
+  animation: top-down 2s;
 }
 header .header-bg-bookpark .square .square-title {
   position: relative;
@@ -217,10 +191,8 @@ header .header-bg-bookpark .square .square-title span:nth-child(1) {
   top: 12%;
   left: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
 }
 header .header-bg-bookpark .square .square-title span:nth-child(2) {
   position: absolute;
@@ -228,28 +200,22 @@ header .header-bg-bookpark .square .square-title span:nth-child(2) {
   transform: translateX(-50%);
   top: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 1.4s;
-          animation: fadeIn 1.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 1.4s;
+  animation-fill-mode: forwards;
 }
 header .header-bg-bookpark .square .square-title span:nth-child(3) {
   top: 12%;
   right: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 1.2s;
-          animation: fadeIn 1.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 1.2s;
+  animation-fill-mode: forwards;
 }
 header .header-bg-bookpark .square .square-title span:nth-child(4) {
   bottom: 12%;
   left: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 1.8s;
-          animation: fadeIn 1.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 1.8s;
+  animation-fill-mode: forwards;
 }
 header .header-bg-bookpark .square .square-title span:nth-child(5) {
   position: absolute;
@@ -257,19 +223,15 @@ header .header-bg-bookpark .square .square-title span:nth-child(5) {
   transform: translateX(-50%);
   bottom: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
 }
 header .header-bg-bookpark .square .square-title span:nth-child(6) {
   bottom: 12%;
   right: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2.4s;
-          animation: fadeIn 2.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 2.4s;
+  animation-fill-mode: forwards;
 }
 header .logo-menu-box {
   position: absolute;
@@ -958,4 +920,4 @@ footer .line span {
   width: 100%;
   height: 2px;
   background-color: #fff;
-}/*# sourceMappingURL=culture_space.css.map */
+}

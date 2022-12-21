@@ -89,6 +89,15 @@ footer {
   }
 }
 
+@-webkit-keyframes mover {
+  from {
+    width: 25%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
 @keyframes mover {
   from {
     width: 25%;
@@ -878,4 +887,4 @@ footer .line span {
   width: 100%;
   height: 2px;
   background-color: #fff;
-}
+}/*# sourceMappingURL=restaurant_and_cafe.css.map */

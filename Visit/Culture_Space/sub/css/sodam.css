@@ -105,16 +105,7 @@ header .header-bg-sodam {
 header .header-bg-sodam img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@-webkit-keyframes left-right {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  object-fit: cover;
 }
 @keyframes left-right {
   0% {
@@ -124,25 +115,12 @@ header .header-bg-sodam img {
     width: 100%;
   }
 }
-@-webkit-keyframes top-down {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
 @keyframes top-down {
   0% {
     height: 0;
   }
   100% {
     height: 100%;
-  }
-}
-@-webkit-keyframes fadeIn {
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -172,32 +150,28 @@ header .header-bg-sodam .square .sqare-line1 {
   top: 0;
   width: 100%;
   height: 5px;
-  -webkit-animation: left-right 2s;
-          animation: left-right 2s;
+  animation: left-right 2s;
 }
 header .header-bg-sodam .square .sqare-line2 {
   right: 0;
   top: 0;
   width: 5px;
   height: 100%;
-  -webkit-animation: top-down 2s;
-          animation: top-down 2s;
+  animation: top-down 2s;
 }
 header .header-bg-sodam .square .sqare-line3 {
   right: 0;
   bottom: 0;
   width: 100%;
   height: 5px;
-  -webkit-animation: left-right 2s;
-          animation: left-right 2s;
+  animation: left-right 2s;
 }
 header .header-bg-sodam .square .sqare-line4 {
   left: 0;
   bottom: 0;
   width: 5px;
   height: 100%;
-  -webkit-animation: top-down 2s;
-          animation: top-down 2s;
+  animation: top-down 2s;
 }
 header .header-bg-sodam .square .square-title {
   position: relative;
@@ -211,43 +185,32 @@ header .header-bg-sodam .square .square-title span:nth-child(1) {
   top: 12%;
   left: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
 }
 header .header-bg-sodam .square .square-title span:nth-child(2) {
   top: 12%;
   right: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
 }
 header .header-bg-sodam .square .square-title span:nth-child(3) {
   bottom: 12%;
   left: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 header .header-bg-sodam .square .square-title span:nth-child(4) {
   bottom: 12%;
   right: 12%;
   opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation: fadeIn 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
 }
 header .logo-menu-box {
   position: absolute;
@@ -948,4 +911,4 @@ footer .line span {
   width: 100%;
   height: 2px;
   background-color: #fff;
-}/*# sourceMappingURL=sodam.css.map */
+}

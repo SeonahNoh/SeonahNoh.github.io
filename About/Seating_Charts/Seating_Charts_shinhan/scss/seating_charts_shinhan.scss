@@ -134,17 +134,14 @@ header {
 
                     @include responsive(small-tablet-screens) {
                         font-size: calc(1vw + 40px);
-                        // 바꾸기 전 : calc(1vw + 50px)
                     }
 
                     @include responsive(large-tablet-screens) {
                         font-size: calc(1vw + 45px);
-                        // 바꾸기 전 : calc(1vw + 60px)
                     }
 
                     @include responsive(desktop-screens) {
                         font-size: calc(1vw + 60px);
-                        // 바꾸기 전 : calc(1vw + 70px)
                     }
                 }
 
@@ -713,7 +710,7 @@ main {
                 width: 20%;
                 position: absolute;
                 right: 0;
-                top: 460px;
+                top: 390px;
             }
 
             ul {
