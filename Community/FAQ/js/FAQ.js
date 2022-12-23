@@ -19,8 +19,6 @@ $(function() {
 
     // ==== 햄버거 메뉴 콘텐츠 스타일 적용
     $('.overlay-menu > ul > li').click(function(e) {
-        e.preventDefault();
-
         $('.overlay-menu > ul > li > a').removeClass('on');
         $(this).children('a').addClass('on');
         
