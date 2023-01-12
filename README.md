@@ -1,4 +1,4 @@
-# 🟦 Blue Square
+# 🔹 Blue Square Website Renewal 
 <img src="https://user-images.githubusercontent.com/114633506/207758186-7115a465-7ad3-4737-8d85-b4efdfb7e44b.png" width="800" height="auto">
 <br>  
 
