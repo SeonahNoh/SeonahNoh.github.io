@@ -6,7 +6,6 @@
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
-  // background-color: skyblue;
 
   @include responsive(desktop-screens) {
     width: 1400px;
@@ -56,7 +55,7 @@ body {
 header {
   position: relative;
   width: 100vw;
-  height: 100vh; // -> 여기도 수정했기 때문에 반드시 start 부분부터 복붙하기!
+  height: 100vh;
   
   .header-bg {
     position: relative;
@@ -205,7 +204,6 @@ header {
                 line-height: 1;
                 margin-top: -1px;
                 background-color: rgba(0, 148, 214, 1);
-                // background-color: rgba(255, 165, 0, 0.6);
                 
                 &::after {
                   display: none;
@@ -395,7 +393,8 @@ header {
 // * ===================== main ===================== *
 
 main {
-  margin: 266px 0;
+  margin-top: 196px;
+  margin-bottom: 266px;
   line-height: 1.5em;
 
   h1 {
@@ -504,7 +503,6 @@ main {
         &:hover {
           font-weight: 600;
           border-radius: 30px;
-          // background-color: $gray-bg;
           background-color: #cceaf7;
         }
       }
@@ -527,13 +525,14 @@ main {
     }
 
     .venue-facility {
-      // display: none;
-
       .flexbox {
-        // background-color: lightsalmon;
+
+        @include flex-box() {
+          flex-direction: column;
+        }
 
         @include responsive(large-tablet-screens) {
-          display: flex;
+          flex-direction: row;
         }
 
         .slide-wrap {
@@ -547,138 +546,53 @@ main {
             img {
               width: 100%;
             }
+
+            .slide-btn {
+              position: absolute;
+              width: 100%;
+              cursor: pointer;
+              @include pos-center-y();
+
+              img {
+                width: 40px;
+                height: 40px;
+              }
+
+              .prev {
+                left: 0;
+                @include pos-center-y();
+              }
+
+              .next {
+                left: calc(100% - 40px);
+                @include pos-center-y();
+              }
+            } //slide-btn
           } //slide-img
-
-          .slide-btn {
-            cursor: pointer;
-
-            img {
-              width: 40px;
-              height: 40px;
-            }
-
-            .prev {
-              left: 0;
-              @include pos-center-y();
-            }
-
-            .next {
-              right: 0;
-              @include pos-center-y();
-            }
-          } //slide-btn
         } //slide-wrap
 
-        .intro-equip-wrap {
-          // position: absolute;
-          // top: 700px;
+        .intro-about-wrap {
           margin-top: 30px;
           font-size: 14px;
 
           @include responsive(large-tablet-screens) {
-            width: 100%;
+            min-width: 480px;
+            max-width: 520px;
             margin-left: 20px;
             margin-top: 0;
             font-size: $text-font-size;
           }
-
+          
           .intro {
             line-height: 24px;
-            // background-color: lightblue;
-
+            
             @include responsive(large-tablet-screens) {
               width: 100%;
             }
           }
-
-          .equipment-list {
-            margin-top: 30px;
-
-            h3 {
-              margin-bottom: 10px;
-            }
-          } //equipment-list
-        } //intro-equip-wrap
+        } //intro-about-wrap
       } //flexbox
     } //venue-facility (대관시설)
-
-    .rental-fee {
-      line-height: 30px;
-      margin-top: 40px;
-      font-size: 14px;
-
-      @include responsive(large-tablet-screens) {
-        font-size: 16px;
-      }
-
-      h2 {
-        position: relative;
-        font-size: 26px;
-        font-weight: normal;
-        padding-left: 13px;
-
-        &::before {
-          position: absolute;
-          top: 0; left: 0;
-          display: block;
-          content: '';
-          width: 5px;
-          height: 100%;
-          background-color: $point-color;
-        }
-      }
-
-      h3 {
-        font-weight: normal;
-        color: $point-color;
-      }
-
-      .perform-fee {
-        .flexbox2 {
-          margin-top: 40px;
-
-          @include responsive(large-tablet-screens) {
-            display: flex;
-          }
-
-          h3 {
-            width: 140px;
-          }
-        }
-      } //perform-fee
-
-      .prepare-fee {
-        .flexbox2 {
-          margin-top: 40px;
-
-          @include responsive(large-tablet-screens) {
-            display: flex;
-          }
-
-          h3 {
-            width: 140px;
-          }
-        }
-      } //prepare-fee
-
-      .agreement {
-        width: 100%;
-        margin-top: 80px;
-        padding: 40px;
-        text-align: center;
-        background-color: $gray-bg;
-
-        @include responsive(large-tablet-screens) {
-          width: 1000px;
-        }
-
-        a {
-          display: inline-block;
-          color: $point-color;
-          font-weight: 600;
-        }
-      }
-    } //rental-fee (대관료)
   } //venue-guidance (대관안내)
   
   #practice {
@@ -690,9 +604,6 @@ main {
 
     .venue-facility {
       .flexbox {
-        .slide-wrap {
-
-        }
 
         .intro-about-wrap {
           margin-top: 30px;
@@ -789,14 +700,6 @@ main {
       }//timeandfee
     } //rental-fee
   } //practice(연습실)
-
-
-
-
-
-
-
-
 } //main
 
 

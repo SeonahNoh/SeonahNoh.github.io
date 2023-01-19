@@ -169,18 +169,19 @@
     </header> <!-- header -->
 
     <main>
+      <a name="hall" style="padding-top: 70px;"></a>
       <div class="container">
         <h1>대관안내</h1>
       </div>
 
       <ul class="tab">
-        <li><a href="./shinhan.html" class="clicked">신한카드홀</a></li>
-        <li><a href="./master/master.html">마스터카드홀</a></li>
-        <li><a href="./practice/practice.html">연습실</a></li>
-        <li><a href="./kaos/kaos.html">카오스홀</a></li>
-        <li><a href="./nemo/nemo.html">NEMO</a></li>
+        <li><a href="./shinhan.html#hall" class="clicked">신한카드홀</a></li>
+        <li><a href="./master/master.html#hall">마스터카드홀</a></li>
+        <li><a href="./practice/practice.html#hall">연습실</a></li>
+        <li><a href="./kaos/kaos.html#hall">카오스홀</a></li>
+        <li><a href="./nemo/nemo.html#hall">NEMO</a></li>
       </ul>
-
+      
       <div class="container">  
         <section class="venue-guidance show" id="shinhan">
           <h2 data-aos="fade-up">대관안내</h2>
@@ -193,14 +194,17 @@
               <div class="slide-wrap">
                 <div class="slide-img">
                   <img id="photo" src="./img/shinhan/shinhan-hall1.png" alt="무대에서 좌석을 바라본 사진-정면">
-                </div>
-                <div class="slide-btn">
-                  <div class="prev" onclick="imgPrev();"><img src="./img/prev.png" alt="이전 버튼"></div>
-                  <div class="next" onclick="imgNext()"><img src="./img/next.png" alt="다음 버튼"></div>
-                </div>
+
+                  <div class="slide-btn">
+                    <div class="prev" onclick="imgPrev();"><img src="./img/prev.png" alt="이전 버튼"></div>
+                    <div class="next" onclick="imgNext()"><img src="./img/next.png" alt="다음 버튼"></div>
+                  </div>
+
+                </div> <!-- slide-img -->
               </div> <!-- slide-wrap -->
 
               <div class="intro-equip-wrap">
+
                 <div class="intro" data-aos="fade-in">
                   신한카드홀은 뮤지컬 전용 대극장으로 총 객석 3층, 1766석으로 되어있습니다.
                   극장을 찾은 관객이 편안하고 쾌적하게 공연을 관람할 수 있도록
@@ -214,6 +218,7 @@
                   항상 배려하는 마음으로 서비스 연구에 매진하는 신한카드 홀에서
                   뮤지컬의 뜨거운열기와 무한한 감동을 가져가시기 바랍니다.
                 </div>
+
                 <div class="equipment-list" data-aos="fade-in">
                   <h3>장비리스트</h3>
                   <div class="list1 btn-flex">
@@ -228,8 +233,9 @@
                       <button class="download">PDF 다운로드</button>
                     </a>
                   </div>
-                </div><!-- equipment-list -->
-              </div> <!-- venue-info -->
+                </div> <!-- equipment-list -->
+                
+              </div> <!-- intro-equip-wrap -->
             </div> <!-- flexbox -->
           </div> <!-- venue-facility -->
 
