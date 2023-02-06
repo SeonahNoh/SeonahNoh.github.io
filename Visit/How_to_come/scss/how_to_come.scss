@@ -139,6 +139,7 @@ header {
     .logo-menu-box {
         position: absolute;
         top: 0; left: 0; right: 0;
+        z-index: 999;
 
         @include responsive(large-tablet-screens) {     
             &:hover {
